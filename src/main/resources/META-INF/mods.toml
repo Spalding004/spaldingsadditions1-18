@@ -1,7 +1,7 @@
 
 modLoader="javafml" #mandatory
 loaderVersion="[39,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
-license="All rights reserved"
+license="MIT"
 [[mods]] #mandatory
 
 modId="spaldingsadditions" #mandatory
@@ -11,6 +11,7 @@ displayName="Spalding's Additions" #mandatory
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 #logoFile="examplemod.png" #optional
 #credits="Thanks for this example mod goes to Java" #optional
+
 authors="MisterSpalding (Spalding004)" #optional
 description='''
 A tech/magic mod focused around the power of Lapis Lazuli and harnessing it for your own use.'''
