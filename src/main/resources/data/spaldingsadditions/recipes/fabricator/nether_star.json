@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_wither"
+    },
+    {
+      "item": "spaldingsadditions:energetic_crystal"
+    }
+  ],
+  "output": {
+    "item": "minecraft:nether_star"
+    
+  },
+  "count": 1,
+  "ticks": 108000
+}

@@ -1,0 +1,50 @@
+{ 
+"replace": false,
+"values": [ 
+	"spaldingsadditions:marcasite",
+	"spaldingsadditions:marcasite_smooth",
+	"spaldingsadditions:shale_smooth",
+	"spaldingsadditions:shale",
+	"spaldingsadditions:apatite",
+	"spaldingsadditions:apatite_smooth",
+	"spaldingsadditions:mixed_stone",
+	
+	"spaldingsadditions:alunite",
+	"spaldingsadditions:alunite_smooth",
+	
+	"spaldingsadditions:umber",
+	"spaldingsadditions:umber_smooth",
+	
+	"spaldingsadditions:cormalite",
+	"spaldingsadditions:cormalite_smooth",
+	
+	"spaldingsadditions:pumice",
+	
+	"spaldingsadditions:coal_ore_diamond",
+	"spaldingsadditions:coal_ore_emerald",
+	"spaldingsadditions:coal_ore_lapis",
+	"spaldingsadditions:coal_ore_redstone",
+	"spaldingsadditions:coal_ore_iron",
+	"spaldingsadditions:coal_ore_gold",
+	"spaldingsadditions:coal_ore_copper",
+	"spaldingsadditions:vendar_ore",
+	"spaldingsadditions:vendar_ore_dense",
+	"spaldingsadditions:umber_gold_ore",
+	
+	"spaldingsadditions:indirium_ore",
+	"spaldingsadditions:geldar_ore",
+	"spaldingsadditions:vironium_ore",
+	
+	"spaldingsadditions:prismarine_ore",
+	
+	"#spaldingsadditions:endfected",
+	
+	"#spaldingsadditions:machines",
+	
+	"spaldingsadditions:voidstone",
+	"spaldingsadditions:voidstone_polished",
+	"spaldingsadditions:voidstone_cobble"
+	
+	
+
+]}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "GCG",
+    "LZL"
+  ],
+  "key": {
+    "G": {
+       "item": "spaldingsadditions:vendar_gear"
+    },
+    "I": {
+       "item": "minecraft:redstone"
+    },
+    "L": {
+       "item": "spaldingsadditions:reduced_lapis_ingot",
+       "data": 0
+    },
+    "Z": {
+       "item": "spaldingsadditions:interchanger",
+       "data": 0
+    },
+    "C": {
+       "item": "spaldingsadditions:vendar_casing",
+       "data": 0
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:concentrator"
+  }
+}

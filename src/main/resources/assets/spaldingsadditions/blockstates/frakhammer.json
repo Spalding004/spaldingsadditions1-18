@@ -1,0 +1,15 @@
+{
+  "variants": 
+    {
+        "facing=north,lit=false": { "model": "spaldingsadditions:block/frakhammer" },
+        "facing=east,lit=false": { "model": "spaldingsadditions:block/frakhammer", "y": 90 },
+        "facing=south,lit=false": { "model": "spaldingsadditions:block/frakhammer", "y": 180 },
+        "facing=west,lit=false": { "model": "spaldingsadditions:block/frakhammer", "y": 270 },
+        
+        "facing=north,lit=true": { "model": "spaldingsadditions:block/frakhammer_lit" },
+        "facing=east,lit=true": { "model": "spaldingsadditions:block/frakhammer_lit", "y": 90 },
+        "facing=south,lit=true": { "model": "spaldingsadditions:block/frakhammer_lit", "y": 180 },
+        "facing=west,lit=true": { "model": "spaldingsadditions:block/frakhammer_lit", "y": 270 }
+       
+    }
+}

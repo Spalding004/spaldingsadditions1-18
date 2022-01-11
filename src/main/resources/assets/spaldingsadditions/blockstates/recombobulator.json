@@ -1,0 +1,15 @@
+{
+  "variants": 
+    {
+        "facing=north,lit=false": { "model": "spaldingsadditions:block/recombobulator" },
+        "facing=east,lit=false": { "model": "spaldingsadditions:block/recombobulator", "y": 90 },
+        "facing=south,lit=false": { "model": "spaldingsadditions:block/recombobulator", "y": 180 },
+        "facing=west,lit=false": { "model": "spaldingsadditions:block/recombobulator", "y": 270 },
+        
+        "facing=north,lit=true": { "model": "spaldingsadditions:block/recombobulator_lit" },
+        "facing=east,lit=true": { "model": "spaldingsadditions:block/recombobulator_lit", "y": 90 },
+        "facing=south,lit=true": { "model": "spaldingsadditions:block/recombobulator_lit", "y": 180 },
+        "facing=west,lit=true": { "model": "spaldingsadditions:block/recombobulator_lit", "y": 270 }
+       
+    }
+}

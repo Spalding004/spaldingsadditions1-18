@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:frakhammer",
+  "ingredients": [
+    
+    {
+      "tag": "spaldingsadditions:item_frakhammer"
+    },
+    {
+      "tag": "minecraft:logs"
+    }
+  ],
+  "output": {
+    "item": "spaldingsadditions:sawdust"
+    
+  },
+  	"count": 2
+}

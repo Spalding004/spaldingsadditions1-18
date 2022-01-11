@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " V ",
+    "VIV",
+    " V "
+  ],
+  "key": {
+    "V": {
+       "item": "spaldingsadditions:indirium_ingot"
+    },
+    "I": {
+       "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:indirium_gear"
+  }
+}

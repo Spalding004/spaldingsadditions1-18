@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_nether"
+    },
+    {
+      "tag": "forge:ingots/silver"
+    }
+  ],
+  "output": {
+    "item": "minecraft:gold_ingot"
+    
+  },
+  "count": 1,
+  "ticks": 75
+}

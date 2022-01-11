@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_end"
+    },
+    {
+      "item": "minecraft:apple"
+    }
+  ],
+  "output": {
+    "item": "minecraft:chorus_fruit"
+    
+  },
+  "count": 1,
+  "ticks": 90
+}

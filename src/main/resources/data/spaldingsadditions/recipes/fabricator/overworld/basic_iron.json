@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_basic"
+    },
+    {
+      "item": "spaldingsadditions:indirium_ingot"
+    }
+  ],
+  "output": {
+    "item": "minecraft:iron_ingot"
+    
+  },
+  "count": 1,
+  "ticks": 60
+}

@@ -1,0 +1,179 @@
+{
+
+
+"item.spaldingsadditions.vendar_chunk" : "Raw Vendar",
+"item.spaldingsadditions.iron_chunk" : "Iron Ore Chunk",
+"item.spaldingsadditions.gold_chunk" : "Gold Ore Chunk",
+"item.spaldingsadditions.umber_gold_chunk" : "Umber Gold Ore Chunk",
+"item.spaldingsadditions.vendar_nugget" : "Vendar Nugget",
+"item.spaldingsadditions.vendar_ingot" : "Vendar Ingot",
+"item.spaldingsadditions.polishing_stone" : "Pumice Polishing Stone",
+"item.spaldingsadditions.end_essence" : "End Essence",
+"item.spaldingsadditions.fractured_lapis" : "Fractured Lapis Lazuli",
+"item.spaldingsadditions.lapis_shard" : "Lapis Lazuli Shard",
+"item.spaldingsadditions.reduced_lapis_nugget" : "Reduced Lapis Nugget",
+"item.spaldingsadditions.reduced_lapis_ingot" : "Reduced Lapis Ingot",
+
+"item.spaldingsadditions.saving_book" : "Book O' Protection",
+
+"item.spaldingsadditions.vironium_nugget" : "Vironium Nugget",
+"item.spaldingsadditions.vironium_ingot" : "Vironium Ingot",
+"item.spaldingsadditions.vironium_ore_chunk" : "Raw Vironium",
+
+"item.spaldingsadditions.geldar_nugget" : "Geldar Nugget",
+"item.spaldingsadditions.geldar_ingot" : "Geldar Ingot",
+"item.spaldingsadditions.geldar_ore_chunk" : "Raw Geldar",
+
+"item.spaldingsadditions.indirium_nugget" : "Indirium Nugget",
+"item.spaldingsadditions.indirium_ingot" : "Indirium Ingot",
+"item.spaldingsadditions.indirium_chunk" : "Raw Indirium",
+
+"item.spaldingsadditions.charged_carbon" : "Charged Carbon",
+"item.spaldingsadditions.replicating_crystal" : "Replicating Crystal",
+"item.spaldingsadditions.sawdust" : "Sawdust",
+"item.spaldingsadditions.wood_pulp" : "Wood Pulp",
+"item.spaldingsadditions.inert_crystal" : "Inert Crystal",
+
+"item.spaldingsadditions.card_basic" : "Dimensional Card (Overworld)",
+"item.spaldingsadditions.card_nether" : "Dimensional Card (Nether)",
+"item.spaldingsadditions.card_end" : "Dimensional Card (End)",
+
+"item.spaldingsadditions.card_wither" : "Withered Card",
+
+"item.spaldingsadditions.energetic_crystal" : "Energetic Crystal",
+"item.spaldingsadditions.dimensional_conductor" : "Dimensional Conductor",
+"block.spaldingsadditions.vendar_casing" : "Vendar Machine Casing",
+
+"item.spaldingsadditions.tool_vendar_pickaxe" : "Vendar Pickaxe",
+"item.spaldingsadditions.tool_vendar_axe" : "Vendar Axe",
+"item.spaldingsadditions.tool_vendar_sword" : "Vendar Sword",
+"item.spaldingsadditions.tool_vendar_shovel" : "Vendar Shovel",
+"item.spaldingsadditions.tool_vendar_hoe" : "Vendar Hoe",
+"item.spaldingsadditions.tool_vendar_frakhammer" : "Vendar Frakhammer",
+
+"item.spaldingsadditions.iron_frakhammer" : "Iron Frakhammer",
+
+"item.spaldingsadditions.tool_enhanced_handle" : "Enhanced Tool Handle",
+"item.spaldingsadditions.nether_pearl" : "Nethered Pearl",
+"item.spaldingsadditions.nether_gaze" : "Nether Gaze",
+
+"item.spaldingsadditions.indirium_gear" : "Indirium Gear",
+"item.spaldingsadditions.vendar_gear" : "Vendar Gear",
+
+
+
+"block.spaldingsadditions.marcasite" : "Marcasite",
+"block.spaldingsadditions.marcasite_smooth" : "Polished Marcasite",
+
+"block.spaldingsadditions.voidstone" : "Voidstone",
+"block.spaldingsadditions.voidstone_polished" : "Polished Voidstone",
+"block.spaldingsadditions.voidstone_cobble" : "Cobbled Voidstone",
+
+
+
+"block.spaldingsadditions.alunite" : "Alunite",
+"block.spaldingsadditions.alunite_smooth" : "Polished alunite",
+
+
+"block.spaldingsadditions.umber" : "Umber",
+"block.spaldingsadditions.umber_smooth" : "Polished Umber",
+
+"block.spaldingsadditions.cormalite" : "Cormalite",
+"block.spaldingsadditions.cormalite_smooth" : "Polished Cormalite",
+
+"block.spaldingsadditions.shale" : "Shale",
+"block.spaldingsadditions.shale_smooth" : "Polished Shale",
+"block.spaldingsadditions.prismarine_ore" : "Prismarine Ore",
+
+"block.spaldingsadditions.apatite" : "Blue Slate",
+"block.spaldingsadditions.apatite_smooth" : "Polished Blue Slate",
+
+"block.spaldingsadditions.pumice" : "Pumice",
+
+"block.spaldingsadditions.endcroached_netherrack" : "Endcroachment",
+"block.spaldingsadditions.endfected_netherrack_a" : "Endfection",
+"block.spaldingsadditions.endfected_netherrack_b" : "Endfection",
+"block.spaldingsadditions.endfected_netherrack_c" : "Endfection",
+"block.spaldingsadditions.endfected_nether_quartz_ore" : "Endfected Nether Quartz Ore",
+"block.spaldingsadditions.endfected_obsidian" : "Endfected Obsidian",
+
+"block.spaldingsadditions.coal_ore_diamond" : "Diamond-Riddled Coal Ore",
+"block.spaldingsadditions.coal_ore_emerald" : "Emerald-Riddled Coal Ore",
+"block.spaldingsadditions.coal_ore_redstone" : "Redstone-Riddled Coal Ore",
+"block.spaldingsadditions.coal_ore_iron" : "Iron-Riddled Coal Ore",
+"block.spaldingsadditions.coal_ore_gold" : "Gold-Riddled Coal Ore",
+"block.spaldingsadditions.coal_ore_lapis" : "Lapis Lazuli-Riddled Coal Ore",
+"block.spaldingsadditions.coal_ore_copper" : "Copper-Riddled Coal Ore",
+
+"block.spaldingsadditions.mixed_stone" : "Mixed Stone",
+"block.spaldingsadditions.mixed_stone_stairs" : "Mixed Stone Stairs",
+"block.spaldingsadditions.mixed_stone_wall" : "Mixed Stone Wall",
+
+"block.spaldingsadditions.vendar_ore" : "Vendar Ore",
+"block.spaldingsadditions.umber_gold_ore" : "Umber Gold Ore",
+"block.spaldingsadditions.vendar_ore_dense" : "Vendar Ore",
+"block.spaldingsadditions.indirium_ore" : "Indirium Ore",
+
+"block.spaldingsadditions.beech_log" : "Copper Beech Log",
+"block.spaldingsadditions.beech_log_stripped" : "Stripped Copper Beech Log",
+"block.spaldingsadditions.beech_wood" : "Copper Beech Wood",
+"block.spaldingsadditions.beech_wood_stripped" : "Stripped Copper Beech Wood",
+"block.spaldingsadditions.beech_leaves" : "Copper Beech Leaves",
+"block.spaldingsadditions.beech_stairs" : "Copper Beech Stairs",
+"block.spaldingsadditions.beech_sapling" : "Copper Beech Sapling",
+"block.spaldingsadditions.beech_planks" : "Copper Beech Planks",
+"block.spaldingsadditions.beech_fence" : "Copper Beech Fence",
+
+"block.spaldingsadditions.yew_log" : "Yew Wood",
+"block.spaldingsadditions.yew_leaves" : "Yew Leaves",
+"block.spaldingsadditions.yew_stairs" : "Yew Stairs",
+"block.spaldingsadditions.yew_sapling" : "Yew Sapling",
+"block.spaldingsadditions.yew_planks" : "Yew Planks",
+"block.spaldingsadditions.yew_fence" : "Yew Fence",
+
+"block.spaldingsadditions.palm_log" : "Ancient Palm Wood",
+"block.spaldingsadditions.palm_leaves" : "Ancient Palm Leaves",
+"block.spaldingsadditions.palm_stairs" : "Ancient Palm Stairs",
+"block.spaldingsadditions.palm_sapling" : "Ancient Palm Sapling",
+"block.spaldingsadditions.palm_planks" : "Ancient Palm Planks",
+"block.spaldingsadditions.palm_fence" : "Ancient Palm Fence",
+
+"block.spaldingsadditions.petrified_log" : "Petrified Wood",
+"block.spaldingsadditions.petrified_planks" : "Petrified Wood Planks",
+"block.spaldingsadditions.petrified_wall" : "Petrified Wood Wall",
+"block.spaldingsadditions.petrified_stairs" : "Petrified Wood Stairs",
+
+"block.spaldingsadditions.fabricator" : "Dimensional Fabricator",
+"block.spaldingsadditions.recombobulator" : "Lapal Recombobulator",
+"block.spaldingsadditions.frakhammer" : "Automatic Frakhammer",
+
+"block.spaldingsadditions.vironium_ore" : "Vironium Ore",
+"block.spaldingsadditions.geldar_ore" : "Geldar Ore",
+
+"block.spaldingsadditions.vironium_ore_chunk" : "Raw Vironium",
+"block.spaldingsadditions.geldar_ore_chunk" : "Raw Geldar",
+
+"misc.spaldingsadditions.fuelleft" : "Fuel Remaining: %s%s",
+
+"recomb.spaldingsadditions.has_book" : "Enchantments Protected!",
+"recomb.spaldingsadditions.no_book" : "Enchantments Not Protected",
+
+"container.spaldingsadditions.fabricator" : "Dimensional Fabricator",
+"container.spaldingsadditions.frakhammer" : "Automatic Frakhammer",
+
+"container.spaldingsadditions.recombobulator" : "Lapal Recombobulator",
+
+"itemGroup.mod_creative_tab" : "Spalding's Additions",
+
+"death.attack.void_walking" : "%1$s felt the touch of the Void.",
+"death.attack.nether_gaze" : "%1$s decided to explode. How sad.",
+"death.attack.lapal_poisoning" : "%1$s became one with energy.",
+
+"tooltip.spaldingsadditions.nether_pearl" : "It's hot hot hot!",
+"tooltip.spaldingsadditions.nether_gaze" : "WARNING: Explosive",
+"tooltip.spaldingsadditions.saving_book" : "Put in a Recombobulator to protect enchantments!",
+"tooltip.spaldingsadditions.lapal_fuel" : "Lapal Fuel (%s LE)"
+
+
+
+}

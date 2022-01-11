@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_nether"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "output": {
+    "item": "minecraft:lava_bucket"
+    
+  },
+  "count": 1,
+  "ticks": 75
+}

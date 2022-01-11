@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_basic"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "output": {
+    "item": "minecraft:ice"
+    
+  },
+  "count": 1,
+  "ticks": 60
+}

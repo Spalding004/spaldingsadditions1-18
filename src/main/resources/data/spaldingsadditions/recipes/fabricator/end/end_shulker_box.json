@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_end"
+    },
+    {
+      "tag": "forge:chests/wooden"
+    }
+  ],
+  "output": {
+    "item": "minecraft:shulker_box"
+    
+  },
+  "count": 1,
+  "ticks": 360
+}

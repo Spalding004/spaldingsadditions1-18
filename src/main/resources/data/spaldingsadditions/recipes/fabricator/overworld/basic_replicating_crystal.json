@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_basic"
+    },
+    {
+      "item": "spaldingsadditions:inert_crystal"
+    }
+  ],
+  "output": {
+    "item": "spaldingsadditions:replicating_crystal"
+    
+  },
+  "count": 2,
+  "ticks": 120
+}

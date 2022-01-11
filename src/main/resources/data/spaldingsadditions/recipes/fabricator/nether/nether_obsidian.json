@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_nether"
+    },
+    {
+      "tag": "forge:glass"
+    }
+  ],
+  "output": {
+    "item": "minecraft:obsidian"
+    
+  },
+  "count": 1,
+  "ticks": 75
+}

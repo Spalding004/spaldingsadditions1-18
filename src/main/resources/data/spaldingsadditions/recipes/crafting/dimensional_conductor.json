@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  D",
+    " V ",
+    "D  "
+  ],
+  "key": {
+    "V": {
+       "item": "spaldingsadditions:vendar_ingot"
+    },
+    "D": {
+       "tag": "forge:gems/diamond"
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:dimensional_conductor"
+  }
+}

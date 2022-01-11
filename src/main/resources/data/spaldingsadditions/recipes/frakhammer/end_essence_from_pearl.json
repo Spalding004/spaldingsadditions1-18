@@ -1,0 +1,15 @@
+{
+  "type": "spaldingsadditions:frakhammer",
+  "ingredients": [
+  {
+      "item": "spaldingsadditions:tool_vendar_frakhammer"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    }
+    
+  ],
+  "output": {
+    "item": "spaldingsadditions:end_essence"
+  }
+}

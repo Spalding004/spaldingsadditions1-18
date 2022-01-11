@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "VVV",
+    "GCG",
+    "LZL"
+  ],
+  "key": {
+    "V": {
+       "item": "spaldingsadditions:indirium_ingot"
+    },
+    "G": {
+       "tag": "forge:gears/iron"
+    },
+    "L": {
+       "item": "spaldingsadditions:reduced_lapis_ingot"
+    },
+    "Z": {
+       "item": "minecraft:iron_ingot"
+    },
+    "C": {
+       "item": "spaldingsadditions:vendar_casing"
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:frakhammer"
+  }
+}

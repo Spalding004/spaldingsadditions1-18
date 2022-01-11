@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "GCG",
+    "LZL"
+  ],
+  "key": {
+    "G": {
+       "item": "spaldingsadditions:vendar_gear"
+    },
+    "I": {
+       "item": "spaldingsadditions:geldar_ingot"
+    },
+    "L": {
+       "item": "spaldingsadditions:reduced_lapis_ingot"
+    },
+    "Z": {
+       "item": "spaldingsadditions:replicating_crystal"
+    },
+    "C": {
+       "item": "spaldingsadditions:vendar_casing",
+       "data": 0
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:recombobulator"
+  }
+}

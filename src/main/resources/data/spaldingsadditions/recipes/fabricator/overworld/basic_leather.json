@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_basic"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    }
+  ],
+  "output": {
+    "item": "minecraft:leather"
+    
+  },
+  "count": 1,
+  "ticks": 60
+}

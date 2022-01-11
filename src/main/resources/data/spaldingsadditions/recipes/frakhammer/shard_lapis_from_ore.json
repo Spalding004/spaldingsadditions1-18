@@ -1,0 +1,15 @@
+{
+  "type": "spaldingsadditions:frakhammer",
+  "ingredients": [
+    
+    {
+      "item": "spaldingsadditions:iron_frakhammer"
+    },
+    {
+      "item": "minecraft:lapis_ore"
+    }
+  ],
+  "output": {
+    "item": "spaldingsadditions:lapis_shard"
+  }
+}

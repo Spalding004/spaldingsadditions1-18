@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:frakhammer",
+  "ingredients": [
+  
+    {
+      "item": "spaldingsadditions:tool_vendar_frakhammer"
+    },
+    {
+      "item": "minecraft:lapis_ore"
+    }
+  ],
+  "output": {
+    "item": "spaldingsadditions:fractured_lapis"
+    
+  },
+  "count": 3
+}

@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_basic"
+    },
+    {
+      "item": "spaldingsadditions:charged_carbon"
+    }
+  ],
+  "output": {
+    "item": "minecraft:diamond"
+    
+  },
+  "count": 1,
+  "ticks": 60
+}

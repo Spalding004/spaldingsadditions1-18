@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_end"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    }
+  ],
+  "output": {
+    "item": "minecraft:end_stone"
+    
+  },
+  "count": 1,
+  "ticks": 90
+}

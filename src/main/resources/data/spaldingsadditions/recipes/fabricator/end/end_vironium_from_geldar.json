@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_end"
+    },
+    {
+      "item": "spaldingsadditions:geldar_ingot"
+    }
+  ],
+  "output": {
+    "item": "spaldingsadditions:vironium_ingot"
+    
+  },
+  "count": 1,
+  "ticks": 90
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "spaldingsadditions:apatite"
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:apatite_smooth",
+    "count": 4
+  }
+}

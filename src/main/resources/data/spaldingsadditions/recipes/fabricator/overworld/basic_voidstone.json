@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_basic"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    }
+  ],
+  "output": {
+    "item": "spaldingsadditions:voidstone"
+    
+  },
+  "count": 1,
+  "ticks": 30
+}

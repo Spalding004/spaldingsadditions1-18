@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_nether"
+    },
+    {
+      "item": "minecraft:flint"
+    }
+  ],
+  "output": {
+    "item": "minecraft:nether_quartz"
+    
+  },
+  "count": 1,
+  "ticks": 75
+}

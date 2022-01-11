@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_nether"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "output": {
+    "item": "spaldingsadditions:nether_pearl"
+    
+  },
+  "count": 1,
+  "ticks": 75
+}

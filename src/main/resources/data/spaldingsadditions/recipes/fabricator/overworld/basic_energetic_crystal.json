@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_basic"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "output": {
+    "item": "spaldingsadditions:energetic_crystal"
+    
+  },
+  "count": 1,
+  "ticks": 300
+}

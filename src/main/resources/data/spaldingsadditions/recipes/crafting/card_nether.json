@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XNX",
+    "GDG",
+    "N N"
+  ],
+  "key": {
+    "N": {
+      "item": "spaldingsadditions:vendar_nugget"
+    },
+    "G": {
+      "tag": "forge:nuggets/gold"
+    },
+    "D": {
+      "tag": "forge:gems/diamond"
+    },
+    "X": {
+      "item": "spaldingsadditions:geldar_ingot"
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:card_nether",
+    "count": 1
+  }
+}

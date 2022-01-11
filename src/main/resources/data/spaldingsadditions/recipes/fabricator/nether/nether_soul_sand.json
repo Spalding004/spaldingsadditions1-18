@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_nether"
+    },
+    {
+      "tag": "forge:sand"
+    }
+  ],
+  "output": {
+    "item": "minecraft:soul_sand"
+    
+  },
+  "count": 1,
+  "ticks": 75
+}

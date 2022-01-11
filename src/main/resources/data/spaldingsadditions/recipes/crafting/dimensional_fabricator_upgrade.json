@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " V ",
+    "VCV",
+    " V "
+  ],
+  "key": {
+    "V": {
+       "item": "spaldingsadditions:vendar_ingot"
+    },
+    "C": {
+       "item": "thermalexpansion:frame",
+       "data": 0
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:vendar_casing"
+  }
+}
