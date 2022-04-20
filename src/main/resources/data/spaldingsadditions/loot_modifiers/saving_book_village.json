@@ -1,0 +1,11 @@
+{
+  "type": "spaldingsadditions:saving_book_village",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/stronghold_library"
+    }
+  ],
+  "addition": "spaldingsadditions:saving_book"
+
+}

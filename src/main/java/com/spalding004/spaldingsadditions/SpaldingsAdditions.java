@@ -15,9 +15,12 @@ import com.spalding004.spaldingsadditions.core.init.ModDamages;
 import com.spalding004.spaldingsadditions.core.init.ModFluids;
 import com.spalding004.spaldingsadditions.core.init.ModItems;
 import com.spalding004.spaldingsadditions.core.init.ModRecipes;
-import com.spalding004.spaldingsadditions.core.init.ModStructureReg;
+import com.spalding004.spaldingsadditions.core.init.ModStructures;
 import com.spalding004.spaldingsadditions.core.init.TransparentBlocks;
+import com.spalding004.spaldingsadditions.events.loot_modifiers.DungeonChestModifier;
 import com.spalding004.spaldingsadditions.events.loot_modifiers.ModDropsModifier;
+import com.spalding004.spaldingsadditions.events.loot_modifiers.StrongholdLibraryModifier;
+import com.spalding004.spaldingsadditions.events.loot_modifiers.WitheredCardBastionModifier;
 import com.spalding004.spaldingsadditions.recipes.DimensionalFabricatorRecipe;
 import com.spalding004.spaldingsadditions.recipes.FrakhammerRecipe;
 import com.spalding004.spaldingsadditions.screen.ModMenuTypes;
@@ -40,7 +43,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -66,16 +68,15 @@ public class SpaldingsAdditions {
 
 	public SpaldingsAdditions() {
 		
-		ModStructureReg.STRUCTURES.register(modEventBus);
+		
 		modEventBus.addListener(this::setup);
 		modEventBus.addListener(this::clientSetup);
 		modEventBus.addListener(this::enqueueIMC);
 		modEventBus.addListener(this::processIMC);
-		
-    //    forgeBus.addListener(EventPriority.NORMAL, ModStructures::addDimensionalSpacing);
-      //  forgeBus.addListener(EventPriority.NORMAL, RunDownHouseStructure::setupStructureSpawns);
+	
 		ModBlocks.BLOCKS.register(modEventBus);
 		ModItems.ITEMS.register(modEventBus);
+		ModStructures.DEFERRED_REGISTRY_STRUCTURE.register(modEventBus);
 		ModRecipes.register(modEventBus);
 		
 		ModDamages.initDamages();
@@ -109,10 +110,7 @@ public class SpaldingsAdditions {
 
 	private void setup(final FMLCommonSetupEvent event) {
 		event.enqueueWork(ModOreGeneration::registerOres);
-	//	event.enqueueWork(ModStructures::setupStructures);
-	//	event.enqueueWork(ModStructures::registerConfiguredStructures);
-		//Structures.setupStructures();
-		//Structures.registerConfiguredStructures();
+
 	}
 
 	private void enqueueIMC(final InterModEnqueueEvent event) {
@@ -142,6 +140,18 @@ public class SpaldingsAdditions {
 
 		event.getRegistry().register(new ModDropsModifier.Serializer()
 				.setRegistryName(new ResourceLocation(SpaldingsAdditions.MOD_ID, "special_drops")));
+		
+		event.getRegistry().register(new WitheredCardBastionModifier.Serializer()
+				.setRegistryName(new ResourceLocation(SpaldingsAdditions.MOD_ID, "withered_card_in_bastion")));
+		
+		event.getRegistry().register(new DungeonChestModifier.Serializer()
+				.setRegistryName(new ResourceLocation(SpaldingsAdditions.MOD_ID, "energetic_crystal_dungeon_loot")));
+		
+		event.getRegistry().register(new DungeonChestModifier.Serializer()
+				.setRegistryName(new ResourceLocation(SpaldingsAdditions.MOD_ID, "vendar_ingot_weaponsmith")));
+		
+		event.getRegistry().register(new StrongholdLibraryModifier.Serializer()
+				.setRegistryName(new ResourceLocation(SpaldingsAdditions.MOD_ID, "saving_book_village")));
 
 	}
 	

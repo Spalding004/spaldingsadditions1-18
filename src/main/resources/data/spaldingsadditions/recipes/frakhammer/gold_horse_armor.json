@@ -1,0 +1,16 @@
+{
+  "type": "spaldingsadditions:frakhammer",
+  "ingredients": [
+  {
+      "tag": "spaldingsadditions:item_frakhammer"
+    },
+    {
+      "item": "minecraft:golden_horse_armor"
+    }
+    
+  ],
+  "output": {
+    "item": "minecraft:gold_ingot"
+  },
+  "count": 2
+}

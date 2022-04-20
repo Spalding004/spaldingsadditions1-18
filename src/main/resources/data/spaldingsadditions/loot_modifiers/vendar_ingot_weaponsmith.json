@@ -1,0 +1,11 @@
+{
+  "type": "spaldingsadditions:vendar_ingot_weaponsmith",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_weaponsmith"
+    }
+  ],
+  "addition": "spaldingsadditions:vendar_ingot"
+
+}

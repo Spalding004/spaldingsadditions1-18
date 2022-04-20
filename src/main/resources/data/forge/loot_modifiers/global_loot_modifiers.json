@@ -1,6 +1,10 @@
 {
   "replace": false,
   "entries": [
-  	"spaldingsadditions:special_drops"
+  	"spaldingsadditions:special_drops",
+  	"spaldingsadditions:withered_card_in_bastion",
+  	"spaldingsadditions:energetic_crystal_dungeon_loot",
+  	"spaldingsadditions:saving_book_village",
+  	"spaldingsadditions:vendar_ingot_weaponsmith"
   ]
 }

@@ -64,7 +64,7 @@ public class ModHelpers {
 	@SuppressWarnings("deprecation")
 	public static boolean checkBlockTagsAny(Block block, TagKey<Block>... tags) {
 		for (TagKey<Block> key : tags) {
-			if (!Registry.BLOCK.getHolderOrThrow(Registry.BLOCK.getResourceKey(block).get()).containsTag(key)) {
+			if (Registry.BLOCK.getHolderOrThrow(Registry.BLOCK.getResourceKey(block).get()).containsTag(key)) {
 				return true;
 			}
 		}

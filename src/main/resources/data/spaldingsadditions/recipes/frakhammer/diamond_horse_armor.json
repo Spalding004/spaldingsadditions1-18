@@ -1,0 +1,16 @@
+{
+  "type": "spaldingsadditions:frakhammer",
+  "ingredients": [
+  {
+      "tag": "spaldingsadditions:item_frakhammer"
+    },
+    {
+      "item": "minecraft:diamond_horse_armor"
+    }
+    
+  ],
+  "output": {
+    "item": "minecraft:diamond"
+  },
+  "count": 2
+}
