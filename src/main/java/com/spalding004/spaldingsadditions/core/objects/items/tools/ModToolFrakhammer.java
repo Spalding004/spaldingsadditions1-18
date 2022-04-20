@@ -1,9 +1,11 @@
 package com.spalding004.spaldingsadditions.core.objects.items.tools;
 
 import com.spalding004.spaldingsadditions.SpaldingsAdditions.ModItemGroup;
+import com.spalding004.spaldingsadditions.utils.ModHelpers;
 
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.Tag;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
@@ -37,16 +39,11 @@ public class ModToolFrakhammer extends PickaxeItem {
 	 
 	 public boolean canHarvestBlock(BlockState blockIn) {
 	    
-		 Tag<Block> tag1 = BlockTags.MINEABLE_WITH_PICKAXE;
-		 Tag<Block> tag2 = BlockTags.MINEABLE_WITH_AXE;
+		 TagKey<Block> tag1 = BlockTags.MINEABLE_WITH_PICKAXE;
+		 TagKey<Block> tag2 = BlockTags.MINEABLE_WITH_AXE;
 		
 		 
-		 if (tag1.contains(blockIn.getBlock()) || tag2.contains(blockIn.getBlock())) {
-		 
-	      return true;
-		 } else {
-			 return false;
-		 }
+		 return ModHelpers.checkBlockTagsAny(blockIn.getBlock(), tag1, tag2);
 		 
 	      
 	 }

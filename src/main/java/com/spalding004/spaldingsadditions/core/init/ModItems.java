@@ -1,9 +1,11 @@
 package com.spalding004.spaldingsadditions.core.init;
 
 import com.spalding004.spaldingsadditions.SpaldingsAdditions;
+import com.spalding004.spaldingsadditions.SpaldingsAdditions.ModItemGroup;
 import com.spalding004.spaldingsadditions.core.init.ModToolTiers.ModItemTiers;
 import com.spalding004.spaldingsadditions.core.objects.items.ModDamageableItem;
 import com.spalding004.spaldingsadditions.core.objects.items.ModDimensionalCard;
+import com.spalding004.spaldingsadditions.core.objects.items.ModFluidBucket;
 import com.spalding004.spaldingsadditions.core.objects.items.ModGenericItem;
 import com.spalding004.spaldingsadditions.core.objects.items.ModNetherGaze;
 import com.spalding004.spaldingsadditions.core.objects.items.ModNetherPearl;
@@ -15,6 +17,7 @@ import com.spalding004.spaldingsadditions.core.objects.items.tools.ModShovel;
 import com.spalding004.spaldingsadditions.core.objects.items.tools.ModSword;
 import com.spalding004.spaldingsadditions.core.objects.items.tools.ModToolFrakhammer;
 
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.registries.DeferredRegister;
@@ -88,6 +91,9 @@ public final class ModItems {
 		public static final RegistryObject<Item> POLISHING_STONE = ITEMS.register("polishing_stone", () -> new ModGenericItem());
 		public static final RegistryObject<Item> SAWDUST = ITEMS.register("sawdust", () -> new ModGenericItem());
 		public static final RegistryObject<Item> WOOD_PULP = ITEMS.register("wood_pulp", () -> new ModGenericItem());
+		
+		public static final RegistryObject<Item> LAPIS_ESSENCE_BUCKET = ITEMS.register(
+				"lapis_essence_bucket", () -> new BucketItem(ModFluids.LAPIS_ESSENCE_FLUID, new Item.Properties().tab(ModItemGroup.instance)));
 		
 		
 	

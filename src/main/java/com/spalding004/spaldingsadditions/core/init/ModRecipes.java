@@ -24,8 +24,7 @@ public class ModRecipes {
 	
 	  public static void register(IEventBus eventBus) {
 	        SERIALIZERS.register(eventBus);
-	        Registry.register(Registry.RECIPE_TYPE, FrakhammerRecipe.Type.ID, FrakhammerRecipe.Type.INSTANCE);
-	        Registry.register(Registry.RECIPE_TYPE, DimensionalFabricatorRecipe.Type.ID, DimensionalFabricatorRecipe.Type.INSTANCE);
+	        
 	    }
 	
 }

@@ -12,25 +12,29 @@ import org.apache.logging.log4j.Logger;
 import com.spalding004.spaldingsadditions.core.init.ModBlockEntities;
 import com.spalding004.spaldingsadditions.core.init.ModBlocks;
 import com.spalding004.spaldingsadditions.core.init.ModDamages;
+import com.spalding004.spaldingsadditions.core.init.ModFluids;
 import com.spalding004.spaldingsadditions.core.init.ModItems;
 import com.spalding004.spaldingsadditions.core.init.ModRecipes;
 import com.spalding004.spaldingsadditions.core.init.ModStructureReg;
 import com.spalding004.spaldingsadditions.core.init.TransparentBlocks;
 import com.spalding004.spaldingsadditions.events.loot_modifiers.ModDropsModifier;
+import com.spalding004.spaldingsadditions.recipes.DimensionalFabricatorRecipe;
+import com.spalding004.spaldingsadditions.recipes.FrakhammerRecipe;
 import com.spalding004.spaldingsadditions.screen.ModMenuTypes;
 import com.spalding004.spaldingsadditions.screen.fabricator.FabricatorScreen;
 import com.spalding004.spaldingsadditions.screen.frakhammer.FrakhammerScreen;
 import com.spalding004.spaldingsadditions.screen.recombobulator.RecombobulatorScreen;
 import com.spalding004.spaldingsadditions.utils.ModTags;
-import com.spalding004.spaldingsadditions.world.ModStructures;
 import com.spalding004.spaldingsadditions.world.features.underground.ModOreGeneration;
 
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
@@ -68,12 +72,14 @@ public class SpaldingsAdditions {
 		modEventBus.addListener(this::enqueueIMC);
 		modEventBus.addListener(this::processIMC);
 		
-        forgeBus.addListener(EventPriority.NORMAL, ModStructures::addDimensionalSpacing);
+    //    forgeBus.addListener(EventPriority.NORMAL, ModStructures::addDimensionalSpacing);
       //  forgeBus.addListener(EventPriority.NORMAL, RunDownHouseStructure::setupStructureSpawns);
 		ModBlocks.BLOCKS.register(modEventBus);
 		ModItems.ITEMS.register(modEventBus);
 		ModRecipes.register(modEventBus);
+		
 		ModDamages.initDamages();
+		ModFluids.register(modEventBus);
 		ModTags.register();
 
 		ModBlockEntities.register(modEventBus);
@@ -103,8 +109,8 @@ public class SpaldingsAdditions {
 
 	private void setup(final FMLCommonSetupEvent event) {
 		event.enqueueWork(ModOreGeneration::registerOres);
-		event.enqueueWork(ModStructures::setupStructures);
-		event.enqueueWork(ModStructures::registerConfiguredStructures);
+	//	event.enqueueWork(ModStructures::setupStructures);
+	//	event.enqueueWork(ModStructures::registerConfiguredStructures);
 		//Structures.setupStructures();
 		//Structures.registerConfiguredStructures();
 	}
@@ -138,7 +144,15 @@ public class SpaldingsAdditions {
 				.setRegistryName(new ResourceLocation(SpaldingsAdditions.MOD_ID, "special_drops")));
 
 	}
-
+	
+	@SubscribeEvent
+	public static void registerRecipeTypes(final RegistryEvent.Register<RecipeSerializer<?>> event) {
+		
+		Registry.register(Registry.RECIPE_TYPE, FrakhammerRecipe.Type.ID, FrakhammerRecipe.Type.INSTANCE);
+        Registry.register(Registry.RECIPE_TYPE, DimensionalFabricatorRecipe.Type.ID, DimensionalFabricatorRecipe.Type.INSTANCE);
+	}
+	
+	
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	public static class RegistryEvents {
 		@SubscribeEvent

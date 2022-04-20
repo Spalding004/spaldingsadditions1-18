@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Random;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Registry;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -40,6 +42,36 @@ public class ModHelpers {
 		
 		
 		return returnList;
+	}
+	
+	
+	
+	@SafeVarargs
+	@SuppressWarnings("deprecation")
+	public static boolean checkBlockTags(Block block, TagKey<Block>... tags) {
+		for (TagKey<Block> key : tags) {
+			if (!Registry.BLOCK.getHolderOrThrow(Registry.BLOCK.getResourceKey(block).get()).containsTag(key)) {
+				return false;
+			}
+		}
+		
+		return true;
+		
+		
+	}
+	
+	@SafeVarargs
+	@SuppressWarnings("deprecation")
+	public static boolean checkBlockTagsAny(Block block, TagKey<Block>... tags) {
+		for (TagKey<Block> key : tags) {
+			if (!Registry.BLOCK.getHolderOrThrow(Registry.BLOCK.getResourceKey(block).get()).containsTag(key)) {
+				return true;
+			}
+		}
+		
+		return false;
+		
+		
 	}
 	
 	

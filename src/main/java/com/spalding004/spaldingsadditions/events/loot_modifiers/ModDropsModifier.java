@@ -74,6 +74,8 @@ public class ModDropsModifier extends LootModifier {
 	 * 
 	 * Do as I say, not as I do.
 	 * 
+	 * This is a temporary measure until I convert all of the blockdrops to proper JSON
+	 * 
 	 * 
 	 * 
 	 * 
@@ -83,14 +85,7 @@ public class ModDropsModifier extends LootModifier {
 		ArrayList<ItemStack> listReturn = new ArrayList<ItemStack>();
 		Random random = new Random();
 		String checkedOre = "nonya";
-		//This breaks drops, have no idea why. Without the below the Frakhammers acts only as an axe/pickaxe with no special drops aside from lapis
 		                 
-	        
-		
-		
-			
-			
-			
 			if (broken.contains("lapis_lazuli")) {
 
 				if (tool.getItem() == ModItems.TOOL_VENDAR_FRAKHAMMER.get()) {
@@ -103,11 +98,6 @@ public class ModDropsModifier extends LootModifier {
     				return listReturn;
     			}
 				
-				
-
-		
-
-			
 			
 			return listReturn;
 

@@ -58,7 +58,7 @@ public class ModEndcroachment extends SpreadingSnowyDirtBlock {
 			BlockPos target_pos = ModHelpers.getRandomAdjacentFaceBlock(pos);
 
 			// if (worldIn.getBlockState(pos).getBlock() == Blocks.NETHERRACK
-			if (ModTags.Blocks.ENDFECTION_TARGETS.contains(worldIn.getBlockState(target_pos).getBlock())
+			if (ModHelpers.checkBlockTagsAny(worldIn.getBlockState(target_pos).getBlock(), ModTags.Blocks.ENDFECTION_TARGETS)
 					&& ModHelpers.isAirAdjacent(worldIn, target_pos)) {
 
 				if (worldIn.getBlockState(target_pos).getBlock() == Blocks.OBSIDIAN) {

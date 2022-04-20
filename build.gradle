@@ -2,13 +2,17 @@ buildscript {
     repositories {
         // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
         maven { url = 'https://maven.minecraftforge.net' }
+         maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://maven.parchmentmc.org' }
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath 'org.parchmentmc:librarian:1.+'
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.parchmentmc.librarian.forgegradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
@@ -33,11 +37,11 @@ minecraft {
     //
     // Use non-default mappings at your own risk. They may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'official', version: '1.18.1'
+    mappings channel: 'parchment', version: '1.18.1-2022.02.13-1.18.2'
 
 	// Structures in 1.16.3+ require you to place them in some vanilla maps which are private variables
     // The access transformer allows us to make them public so we can place our structures in them
-    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+   // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
    
     // Default run configurations.
     // These can be tweaked, removed, or duplicated as needed.
@@ -127,18 +131,21 @@ repositories {
     name = "ModMaven"
     url = "https://modmaven.dev"
   }
+  
 }
 
 dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft', it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.18.1-39.0.9'
+    minecraft 'net.minecraftforge:forge:1.18.2-40.1.0'
 
-    // compile against the JEI API but do not include it at runtime
-  compileOnly fg.deobf("mezz.jei:jei-1.18.1:9.1.2.54:api")
+   // compile against the JEI API but do not include it at runtime
+  compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
   // at runtime, use the full JEI jar
-  runtimeOnly fg.deobf("mezz.jei:jei-1.18.1:9.1.2.54")
+  runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
+  
+    
 }
 
 // Example for how to get properties into the manifest for reading at runtime.

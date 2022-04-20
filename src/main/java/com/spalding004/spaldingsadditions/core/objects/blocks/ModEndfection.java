@@ -78,7 +78,7 @@ public class ModEndfection extends SpreadingSnowyDirtBlock {
 		//System.out.println("The block I checked was " + worldIn.getBlockState(pos).getBlock());
 		if (spread_check < 5 ) {
 		
-			if (ModTags.Blocks.ENDFECTION_TARGETS.contains(worldIn.getBlockState(target_pos).getBlock())) {
+			if (ModHelpers.checkBlockTagsAny(worldIn.getBlockState(target_pos).getBlock(), ModTags.Blocks.ENDFECTION_TARGETS)) {
 				
 				if (worldIn.getBlockState(target_pos).getBlock() == Blocks.OBSIDIAN) {
 					worldIn.setBlockAndUpdate(target_pos, ModBlocks.ENDFECTED_OBSIDIAN.get().defaultBlockState());
