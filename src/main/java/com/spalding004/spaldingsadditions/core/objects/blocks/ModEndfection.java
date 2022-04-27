@@ -27,9 +27,7 @@ public class ModEndfection extends SpreadingSnowyDirtBlock {
 	private String type;
 	
 	public ModEndfection(String type) {
-	super(BlockBehaviour.Properties
-			.of(Material.STONE)
-			.strength(1F, 2F)
+	super(BlockBehaviour.Properties.of(Material.STONE).strength(1F, 2F)
 			.requiresCorrectToolForDrops()
 			.randomTicks()
 			.lightLevel((light) -> {

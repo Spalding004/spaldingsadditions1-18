@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "spaldingsadditions:crape_myrtle_log"
+		}
+	],
+	"result": {
+		"item": "spaldingsadditions:crape_myrtle_planks",
+		"count": 2
+		
+	}
+}

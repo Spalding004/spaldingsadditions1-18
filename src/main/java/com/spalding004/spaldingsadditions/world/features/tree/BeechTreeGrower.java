@@ -12,7 +12,7 @@ public class BeechTreeGrower extends AbstractTreeGrower {
 
 	
 	@Override
-	protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random p_60014_, boolean p_60015_) {
+	protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random rand, boolean bool) {
 		// TODO Auto-generated method stub
 		return ModConfiguredFeature.BEECH_TREE;
 	}}

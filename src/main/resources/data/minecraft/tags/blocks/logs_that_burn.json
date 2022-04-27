@@ -1,6 +1,7 @@
 {
   "replace" : false,
   "values" : [ 
-  "#spaldingsadditions:beech_logs"
+  "#spaldingsadditions:beech_logs",
+  "#spaldingsadditions:thin_logs"
   ]
 }

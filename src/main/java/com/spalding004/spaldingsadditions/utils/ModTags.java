@@ -24,6 +24,8 @@ public class ModTags {
 		public static final TagKey<Block> BEECH_LOGS = tag("beech_logs");
 		public static final TagKey<Block> ENDFECTED = tag("endfected");
 		
+		public static final TagKey<Block> THIN_LOGS = tag("thin_logs");
+		
 		public static final TagKey<Block> ENDFECTION_TARGETS = tag("endfection_targets");
 		
 		

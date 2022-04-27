@@ -70,7 +70,10 @@
 "block.spaldingsadditions.voidstone_polished" : "Polished Voidstone",
 "block.spaldingsadditions.voidstone_cobble" : "Cobbled Voidstone",
 
-
+"block.spaldingsadditions.crape_myrtle_log" : "Crape Myrtle Log",
+"block.spaldingsadditions.crape_myrtle_leaves" : "Crape Myrtle Leaves",
+"block.spaldingsadditions.crape_myrtle_leaves_blossom" : "Blossoming Crape Myrtle Leaves",
+"block.spaldingsadditions.crape_myrtle_planks" : "Crape Myrtle Planks",
 
 "block.spaldingsadditions.alunite" : "Alunite",
 "block.spaldingsadditions.alunite_smooth" : "Polished alunite",
@@ -90,6 +93,8 @@
 "block.spaldingsadditions.apatite_smooth" : "Polished Blue Slate",
 
 "block.spaldingsadditions.pumice" : "Pumice",
+
+"block.spaldingsadditions.crape_myrtle_cutting" : "Crape Myrtle Cutting",
 
 "block.spaldingsadditions.endcroached_netherrack" : "Endcroachment",
 "block.spaldingsadditions.endfected_netherrack_a" : "Endfection",
@@ -124,6 +129,9 @@
 "block.spaldingsadditions.beech_sapling" : "Copper Beech Sapling",
 "block.spaldingsadditions.beech_planks" : "Copper Beech Planks",
 "block.spaldingsadditions.beech_fence" : "Copper Beech Fence",
+"block.spaldingsadditions.beech_slab" : "Copper Beech Slab",
+
+"block.spaldingsadditions.woven_leather" : "Woven Leather",
 
 "block.spaldingsadditions.yew_log" : "Yew Wood",
 "block.spaldingsadditions.yew_leaves" : "Yew Leaves",

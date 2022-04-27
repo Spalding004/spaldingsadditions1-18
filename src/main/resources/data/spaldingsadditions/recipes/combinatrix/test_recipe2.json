@@ -1,0 +1,20 @@
+{
+  "type": "spaldingsadditions:combinatrix",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:emerald"
+    }
+  ],
+  "output": {
+    "item": "minecraft:stone"
+    
+  },
+  "count": 1,
+  "ticks": 300
+}

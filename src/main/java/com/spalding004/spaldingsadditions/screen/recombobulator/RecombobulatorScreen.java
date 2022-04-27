@@ -82,7 +82,7 @@ public class RecombobulatorScreen extends AbstractContainerScreen<Recombobulator
     	Rectangle bar = this.fuelBar.rect;
         Rectangle icon = this.lockIcon.rect;
         if (isHovering(bar.x, bar.y, bar.width, bar.height, mouseX, mouseY)) {
-            this.renderTooltip(poseStack, TextUtils.fuelPercent(this.menu.getScaledFuelProgress()), mouseX, mouseY);
+            this.renderTooltip(poseStack, TextUtils.fuelPercent(this.menu.getFuelPercent()), mouseX, mouseY);
          }
         
         if (isHovering(icon.x, icon.y, icon.width, icon.height, mouseX, mouseY)) {

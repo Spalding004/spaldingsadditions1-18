@@ -1,6 +1,7 @@
 package com.spalding004.spaldingsadditions.core.init;
 
 import com.spalding004.spaldingsadditions.SpaldingsAdditions;
+import com.spalding004.spaldingsadditions.recipes.CombinatrixRecipe;
 import com.spalding004.spaldingsadditions.recipes.DimensionalFabricatorRecipe;
 import com.spalding004.spaldingsadditions.recipes.FrakhammerRecipe;
 
@@ -21,6 +22,9 @@ public class ModRecipes {
 	
 	public static final RegistryObject<RecipeSerializer<DimensionalFabricatorRecipe>> FABRICATOR_RECIPE_SERIALIZER =
 			SERIALIZERS.register("fabricator", () -> DimensionalFabricatorRecipe.Serializer.INSTANCE);
+	
+	public static final RegistryObject<RecipeSerializer<CombinatrixRecipe>> COMBINATRIX_RECIPE_SERIALIZER =
+			SERIALIZERS.register("combinatrix", () -> CombinatrixRecipe.Serializer.INSTANCE);
 	
 	  public static void register(IEventBus eventBus) {
 	        SERIALIZERS.register(eventBus);

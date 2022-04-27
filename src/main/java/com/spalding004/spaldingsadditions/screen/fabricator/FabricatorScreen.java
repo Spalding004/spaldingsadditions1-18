@@ -74,7 +74,7 @@ public class FabricatorScreen extends AbstractContainerScreen<FabricatorMenu> {
     	Rectangle bar = this.fuelBar.rect;
         
         if (isHovering(bar.x, bar.y, bar.width, bar.height, mouseX, mouseY)) {
-            this.renderTooltip(poseStack, TextUtils.fuelPercent(this.menu.getScaledFuelProgress()), mouseX, mouseY);
+            this.renderTooltip(poseStack, TextUtils.fuelPercent(this.menu.getFuelPercent()), mouseX, mouseY);
          }
         
         super.renderTooltip(poseStack, mouseX, mouseY);

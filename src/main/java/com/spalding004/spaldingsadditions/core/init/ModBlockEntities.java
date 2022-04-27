@@ -1,6 +1,7 @@
 package com.spalding004.spaldingsadditions.core.init;
 
 import com.spalding004.spaldingsadditions.SpaldingsAdditions;
+import com.spalding004.spaldingsadditions.core.objects.blocks.entity.CombinatrixBlockEntity;
 import com.spalding004.spaldingsadditions.core.objects.blocks.entity.FabricatorBlockEntity;
 import com.spalding004.spaldingsadditions.core.objects.blocks.entity.FrakhammerBlockEntity;
 import com.spalding004.spaldingsadditions.core.objects.blocks.entity.RecombobulatorBlockEntity;
@@ -25,6 +26,10 @@ public class ModBlockEntities {
 	
 	public static final RegistryObject<BlockEntityType<RecombobulatorBlockEntity>> RECOMBOBULATOR = BLOCK_ENTITIES.register("recombobulator",
 			() -> BlockEntityType.Builder.of(RecombobulatorBlockEntity::new, ModBlocks.RECOMBOBULATOR.get()).build(null));
+	
+	public static final RegistryObject<BlockEntityType<CombinatrixBlockEntity>> COMBINATRIX = BLOCK_ENTITIES.register("combinatrix",
+			() -> BlockEntityType.Builder.of(CombinatrixBlockEntity::new, ModBlocks.COMBINATRIX.get()).build(null));
+	
 	
 	public static void register(IEventBus eventBus) {
 		BLOCK_ENTITIES.register(eventBus);

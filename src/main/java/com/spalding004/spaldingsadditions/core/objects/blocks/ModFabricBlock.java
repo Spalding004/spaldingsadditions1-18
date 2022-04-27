@@ -1,0 +1,38 @@
+package com.spalding004.spaldingsadditions.core.objects.blocks;
+
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+
+public class ModFabricBlock extends Block {
+
+	
+	public ModFabricBlock(Block toCopy) {
+		super(BlockBehaviour.Properties.copy(toCopy));
+
+		
+	}
+
+	@Override
+	public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+		return true;
+	}
+
+	@Override
+	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+		return 60;
+	}
+
+	@Override
+	public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+		return 30;
+	}
+
+	
+	
+	
+}

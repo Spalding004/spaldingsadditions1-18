@@ -66,6 +66,12 @@ public class FabricatorMenu extends AbstractContainerMenu {
 
 	        return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
 	    }
+	    
+	    public int getFuelPercent() {
+	    	int fuelProgress = this.data.get(2);
+	        int maxFuelProgress = this.data.get(3);
+	        return maxFuelProgress != 0 ? (int)(((float)fuelProgress / (float)maxFuelProgress) * 100) : 0;
+	    }
 
 	    public int getScaledFuelProgress() {
 	        int fuelProgress = this.data.get(2);

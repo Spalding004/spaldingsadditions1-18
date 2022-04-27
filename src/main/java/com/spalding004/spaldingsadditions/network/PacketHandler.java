@@ -20,8 +20,6 @@ public final class PacketHandler {
 		public static void init() {
 			
 			int index = 0;
-		//	INSTANCE.messageBuilder(SB_Gaze.class, index++, NetworkDirection.PLAY_TO_SERVER)
-		//	.encoder(SB_Gaze::encode).decoder(SB_Gaze::new).consumer(SB_Gaze::handle);
 			
 		}
 		

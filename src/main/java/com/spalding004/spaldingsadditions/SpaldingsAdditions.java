@@ -12,7 +12,6 @@ import org.apache.logging.log4j.Logger;
 import com.spalding004.spaldingsadditions.core.init.ModBlockEntities;
 import com.spalding004.spaldingsadditions.core.init.ModBlocks;
 import com.spalding004.spaldingsadditions.core.init.ModDamages;
-import com.spalding004.spaldingsadditions.core.init.ModFluids;
 import com.spalding004.spaldingsadditions.core.init.ModItems;
 import com.spalding004.spaldingsadditions.core.init.ModRecipes;
 import com.spalding004.spaldingsadditions.core.init.ModStructures;
@@ -21,9 +20,11 @@ import com.spalding004.spaldingsadditions.events.loot_modifiers.DungeonChestModi
 import com.spalding004.spaldingsadditions.events.loot_modifiers.ModDropsModifier;
 import com.spalding004.spaldingsadditions.events.loot_modifiers.StrongholdLibraryModifier;
 import com.spalding004.spaldingsadditions.events.loot_modifiers.WitheredCardBastionModifier;
+import com.spalding004.spaldingsadditions.recipes.CombinatrixRecipe;
 import com.spalding004.spaldingsadditions.recipes.DimensionalFabricatorRecipe;
 import com.spalding004.spaldingsadditions.recipes.FrakhammerRecipe;
 import com.spalding004.spaldingsadditions.screen.ModMenuTypes;
+import com.spalding004.spaldingsadditions.screen.combinatrix.CombinatrixScreen;
 import com.spalding004.spaldingsadditions.screen.fabricator.FabricatorScreen;
 import com.spalding004.spaldingsadditions.screen.frakhammer.FrakhammerScreen;
 import com.spalding004.spaldingsadditions.screen.recombobulator.RecombobulatorScreen;
@@ -80,7 +81,7 @@ public class SpaldingsAdditions {
 		ModRecipes.register(modEventBus);
 		
 		ModDamages.initDamages();
-		ModFluids.register(modEventBus);
+	
 		ModTags.register();
 
 		ModBlockEntities.register(modEventBus);
@@ -122,6 +123,7 @@ public class SpaldingsAdditions {
 		MenuScreens.register(ModMenuTypes.FABRICATOR_MENU.get(), FabricatorScreen::new);
 		MenuScreens.register(ModMenuTypes.FRAKHAMMER_MENU.get(), FrakhammerScreen::new);
 		MenuScreens.register(ModMenuTypes.RECOMBOBULATOR_MENU.get(), RecombobulatorScreen::new);
+		MenuScreens.register(ModMenuTypes.COMBINATRIX_MENU.get(), CombinatrixScreen::new);
 	}
 
 	private void processIMC(final InterModProcessEvent event) {
@@ -160,6 +162,7 @@ public class SpaldingsAdditions {
 		
 		Registry.register(Registry.RECIPE_TYPE, FrakhammerRecipe.Type.ID, FrakhammerRecipe.Type.INSTANCE);
         Registry.register(Registry.RECIPE_TYPE, DimensionalFabricatorRecipe.Type.ID, DimensionalFabricatorRecipe.Type.INSTANCE);
+        Registry.register(Registry.RECIPE_TYPE, CombinatrixRecipe.Type.ID, CombinatrixRecipe.Type.INSTANCE);
 	}
 	
 	

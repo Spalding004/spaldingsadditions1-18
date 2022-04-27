@@ -40,6 +40,23 @@ public class ModConfiguredFeature {
 									.5F)), BEECH_TREE_CHECKED));
 
 
+	public static final Holder<? extends ConfiguredFeature<TreeConfiguration, ?>> CRAPE_TREE =
+
+			FeatureUtils.register("crape",
+					Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+							BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_LOG.get().defaultBlockState()), 
+								new StraightTrunkPlacer(2, 3, 3),
+							BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_LEAVES.get()),
+							new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 2),
+							new TwoLayersFeatureSize(1, 1, 1)).build());
 	
+	public static final Holder<PlacedFeature> CRAPE_TREE_CHECKED = PlacementUtils.register("crape_tree_checked", 
+			CRAPE_TREE, PlacementUtils.filteredByBlockSurvival(ModBlocks.CRAPE_MYRTLE_CUTTING.get()));
+
+	public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> CRAPE_TREE_SPAWN = 
+					FeatureUtils.register("crape_tree_spawn", Feature.RANDOM_SELECTOR, 
+							new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(CRAPE_TREE_CHECKED,
+									.5F)), CRAPE_TREE_CHECKED));
+
 	
 }

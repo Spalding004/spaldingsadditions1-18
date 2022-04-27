@@ -1,19 +1,28 @@
 package com.spalding004.spaldingsadditions.core.init;
 
 import com.spalding004.spaldingsadditions.SpaldingsAdditions;
+import com.spalding004.spaldingsadditions.core.objects.blocks.ModCombinatrix;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModEndcroachment;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModEndfection;
+import com.spalding004.spaldingsadditions.core.objects.blocks.ModFabricBlock;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModFabricator;
+import com.spalding004.spaldingsadditions.core.objects.blocks.ModFenceBlock;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModFlammablePillar;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModFrakhammer;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModLeaves;
+import com.spalding004.spaldingsadditions.core.objects.blocks.ModLeavesGrowable;
+import com.spalding004.spaldingsadditions.core.objects.blocks.ModLeavesMealable;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModMachineCasing;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModOre;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModPlanks;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModRecombobulator;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModSapling;
+import com.spalding004.spaldingsadditions.core.objects.blocks.ModSlabWooden;
+import com.spalding004.spaldingsadditions.core.objects.blocks.ModStairsWooden;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModStone;
+import com.spalding004.spaldingsadditions.core.objects.blocks.ModThinLog;
 import com.spalding004.spaldingsadditions.world.features.tree.BeechTreeGrower;
+import com.spalding004.spaldingsadditions.world.features.tree.CrapeTreeGrower;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -95,19 +104,29 @@ public class ModBlocks {
 	
 	public static final RegistryObject<Block> BEECH_PLANKS = BLOCKS.register("beech_planks", () -> new ModPlanks());
 	public static final RegistryObject<Block> BEECH_SAPLING = BLOCKS.register("beech_sapling", () -> new ModSapling(new BeechTreeGrower()));
+	public static final RegistryObject<Block> CRAPE_MYRTLE_CUTTING = BLOCKS.register("crape_myrtle_cutting", () -> new ModSapling(new CrapeTreeGrower()));
+	
 	public static final RegistryObject<Block> BEECH_LEAVES = BLOCKS.register("beech_leaves", () -> new ModLeaves(Blocks.OAK_LEAVES));
 
+	
+	public static final RegistryObject<Block> CRAPE_MYRTLE_LEAVES_BLOSSOM = BLOCKS.register("crape_myrtle_leaves_blossom", () -> new ModLeaves(Blocks.OAK_LEAVES));
+	public static final RegistryObject<Block> CRAPE_MYRTLE_PLANKS = BLOCKS.register("crape_myrtle_planks", () -> new ModPlanks());
+	public static final RegistryObject<Block> CRAPE_MYRTLE_LEAVES = BLOCKS.register("crape_myrtle_leaves", () -> new ModLeavesMealable(Blocks.OAK_LEAVES, "crape"));
+	
 	public static final RegistryObject<Block> FABRICATOR = BLOCKS.register("fabricator", () -> new ModFabricator());
 	public static final RegistryObject<Block> FRAKHAMMER = BLOCKS.register("frakhammer", () -> new ModFrakhammer());
 	public static final RegistryObject<Block> RECOMBOBULATOR = BLOCKS.register("recombobulator", () -> new ModRecombobulator());	
+	public static final RegistryObject<Block> COMBINATRIX = BLOCKS.register("combinatrix", () -> new ModCombinatrix());	
 	
 	public static final RegistryObject<Block> VENDAR_CASING = BLOCKS.register("vendar_casing", () -> new ModMachineCasing());
 	
-	/*
+	public static final RegistryObject<Block> WOVEN_LEATHER = BLOCKS.register("woven_leather", () -> new ModFabricBlock(Blocks.BROWN_WOOL));
 	
-	public static final RegistryObject<Block> BEECH_STAIRS = BLOCKS.register("beech_stairs", () -> new ModStairsBlockWood(BlockDec.BEECH_PLANKS.get()));
+	public static final RegistryObject<Block> BEECH_STAIRS = BLOCKS.register("beech_stairs", () -> new ModStairsWooden(ModBlocks.BEECH_PLANKS.get()));
 	public static final RegistryObject<Block> BEECH_FENCE = BLOCKS.register("beech_fence", () -> new ModFenceBlock());
-	
+	public static final RegistryObject<Block> BEECH_SLAB = BLOCKS.register("beech_slab", () -> new ModSlabWooden(ModBlocks.BEECH_PLANKS.get()));
+	public static final RegistryObject<Block> CRAPE_MYRTLE_LOG = BLOCKS.register("crape_myrtle_log", () -> new ModThinLog());
+	/*
 	public static final RegistryObject<Block> PALM_LOG = BLOCKS.register("palm_log", () -> new ModLogs());
 	public static final RegistryObject<Block> PALM_PLANKS = BLOCKS.register("palm_planks", () -> new ModPlanks());
 	public static final RegistryObject<Block> PALM_STAIRS = BLOCKS.register("palm_stairs", () -> new ModStairsBlockWood(BlockDec.PALM_PLANKS.get()));
