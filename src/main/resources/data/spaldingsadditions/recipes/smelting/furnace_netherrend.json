@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "spaldingsadditions:cobbled_netherrend"
+  },
+  "result": "spaldingsadditions:netherrend",
+  "experience": 0.7,
+  "cookingtime": 200
+}

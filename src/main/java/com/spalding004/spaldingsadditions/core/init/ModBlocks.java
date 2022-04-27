@@ -155,4 +155,7 @@ public class ModBlocks {
 	
 	//combinatrix blocks
 	public static final RegistryObject<Block> COBBLERACK = BLOCKS.register("cobblerack", () -> new ModStone());
+	public static final RegistryObject<Block> COBBLED_NETHERREND = BLOCKS.register("cobbled_netherrend", () -> new ModStone());
+	public static final RegistryObject<Block> NETHERREND = BLOCKS.register("netherrend", () -> new ModStone());
+	public static final RegistryObject<Block> ENERGETIC_ORE = BLOCKS.register("energetic_ore", () -> new ModOre(4));
 }

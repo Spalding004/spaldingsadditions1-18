@@ -72,10 +72,15 @@
 "block.spaldingsadditions.voidstone_polished" : "Polished Voidstone",
 "block.spaldingsadditions.voidstone_cobble" : "Cobbled Voidstone",
 
+"block.spaldingsadditions.cobblerack" : "Cobblerack",
+"block.spaldingsadditions.cobbled_netherrend" : "Cobbled Netherrend",
+"block.spaldingsadditions.netherrend" : "Netherrend",
 "block.spaldingsadditions.crape_myrtle_log" : "Crape Myrtle Log",
 "block.spaldingsadditions.crape_myrtle_leaves" : "Crape Myrtle Leaves",
 "block.spaldingsadditions.crape_myrtle_leaves_blossom" : "Blossoming Crape Myrtle Leaves",
 "block.spaldingsadditions.crape_myrtle_planks" : "Crape Myrtle Planks",
+
+"block.spaldingsadditions.energetic_ore" : "Energetic Ore",
 
 "block.spaldingsadditions.alunite" : "Alunite",
 "block.spaldingsadditions.alunite_smooth" : "Polished alunite",
