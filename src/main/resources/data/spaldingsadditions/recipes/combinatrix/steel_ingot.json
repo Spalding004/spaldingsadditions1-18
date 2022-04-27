@@ -6,15 +6,12 @@
     },
     {
       "item": "minecraft:iron_ingot"
-    },
-    {
-      "item": "minecraft:emerald"
     }
   ],
   "output": {
-    "item": "minecraft:stone"
+    "item": "spaldingsadditions:steel_ingot"
     
   },
   "count": 1,
-  "ticks": 300
+  "ticks": 60
 }

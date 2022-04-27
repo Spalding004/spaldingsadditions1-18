@@ -43,92 +43,242 @@ public class CombinatrixRecipe implements Recipe<SimpleContainer> {
 	@Override
 	public boolean matches(SimpleContainer pContainer, net.minecraft.world.level.Level pLevel) {
 
-		int recipeLen = recipeItems.size();
-		int checkLen = 0;
-		Boolean check = false;
-		SimpleContainer copy1 = pContainer;
-		SimpleContainer copy = pContainer;
-
-		int conTotal = 0;
-		int recTotal = 0;
-
-		if (recipeLen != checkLen) {
-			check = false;
-		}
-
-		boolean con1 = false;
-		boolean con2 = false;
-		boolean con3 = false;
-		boolean con4 = false;
-
-		int con1Slot = -1;
-		int con2Slot = -1;
-		int con3Slot = -1;
-		int con4Slot = -1;
-
-		for (int a = 1; a < 4; a++) {
-
-			if (recipeItems.get(0).test(copy.getItem(a))) {
-
-				con1 = true;
-				con1Slot = a;
-			}
-
-		}
-
-		for (int a = 1; a < 4; a++) {
-			if (a != con1Slot) {
-				if (recipeItems.get(1).test(copy.getItem(a))) {
-
-					con2 = true;
-					con2Slot = a;
-				}
-			}
-
-		}
-
-		for (int a = 1; a < 4; a++) {
-			if (a != con1Slot && a != con2Slot) {
-				if (recipeItems.get(2).test(copy.getItem(a))) {
-
-					con3 = true;
-					con3Slot = a;
-				}
-			}
-
-		}
-
-		for (int a = 1; a < 4; a++) {
-			if (a != con1Slot && a != con2Slot && a != con3Slot) {
-				if (recipeItems.get(3).test(copy.getItem(a))) {
-
-					con4 = true;
-					con4Slot = a;
+		
+		
+		Boolean ret = false;
+		if (recipeItems.get(0).test(pContainer.getItem(1))) {
+			if (recipeItems.get(1).test(pContainer.getItem(2))) {
+				if (recipeItems.get(2).test(pContainer.getItem(3))) {
+					if (recipeItems.get(3).test(pContainer.getItem(4))) {
+						ret = true;
+					}
 				}
 			}
 		}
-
-		if (con1)
-			conTotal++;
-		if (con2)
-			conTotal++;
-		if (con3)
-			conTotal++;
-		if (con4)
-			conTotal++;
-
-		if (!recipeItems.get(0).test(ItemStack.EMPTY))
-			recTotal++;
-		if (!recipeItems.get(1).test(ItemStack.EMPTY))
-			recTotal++;
-		if (!recipeItems.get(2).test(ItemStack.EMPTY))
-			recTotal++;
-		if (!recipeItems.get(3).test(ItemStack.EMPTY))
-			recTotal++;
-
-		//System.out.println(conTotal +" | " + recTotal);
-		return (conTotal == recTotal);
-
+		
+		if (recipeItems.get(0).test(pContainer.getItem(1))) {
+			if (recipeItems.get(2).test(pContainer.getItem(2))) {
+				if (recipeItems.get(3).test(pContainer.getItem(3))) {
+					if (recipeItems.get(1).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(0).test(pContainer.getItem(1))) {
+			if (recipeItems.get(3).test(pContainer.getItem(2))) {
+				if (recipeItems.get(1).test(pContainer.getItem(3))) {
+					if (recipeItems.get(2).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(0).test(pContainer.getItem(1))) {
+			if (recipeItems.get(1).test(pContainer.getItem(2))) {
+				if (recipeItems.get(3).test(pContainer.getItem(3))) {
+					if (recipeItems.get(2).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(0).test(pContainer.getItem(1))) {
+			if (recipeItems.get(3).test(pContainer.getItem(2))) {
+				if (recipeItems.get(2).test(pContainer.getItem(3))) {
+					if (recipeItems.get(1).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(0).test(pContainer.getItem(1))) {
+			if (recipeItems.get(2).test(pContainer.getItem(2))) {
+				if (recipeItems.get(1).test(pContainer.getItem(3))) {
+					if (recipeItems.get(3).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(1).test(pContainer.getItem(1))) {
+			if (recipeItems.get(2).test(pContainer.getItem(2))) {
+				if (recipeItems.get(3).test(pContainer.getItem(3))) {
+					if (recipeItems.get(0).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(1).test(pContainer.getItem(1))) {
+			if (recipeItems.get(3).test(pContainer.getItem(2))) {
+				if (recipeItems.get(2).test(pContainer.getItem(3))) {
+					if (recipeItems.get(0).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(1).test(pContainer.getItem(1))) {
+			if (recipeItems.get(2).test(pContainer.getItem(2))) {
+				if (recipeItems.get(0).test(pContainer.getItem(3))) {
+					if (recipeItems.get(3).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(1).test(pContainer.getItem(1))) {
+			if (recipeItems.get(3).test(pContainer.getItem(2))) {
+				if (recipeItems.get(0).test(pContainer.getItem(3))) {
+					if (recipeItems.get(2).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(1).test(pContainer.getItem(1))) {
+			if (recipeItems.get(0).test(pContainer.getItem(2))) {
+				if (recipeItems.get(3).test(pContainer.getItem(3))) {
+					if (recipeItems.get(2).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(1).test(pContainer.getItem(1))) {
+			if (recipeItems.get(0).test(pContainer.getItem(2))) {
+				if (recipeItems.get(2).test(pContainer.getItem(3))) {
+					if (recipeItems.get(3).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		
+		
+		if (recipeItems.get(2).test(pContainer.getItem(1))) {
+			if (recipeItems.get(3).test(pContainer.getItem(2))) {
+				if (recipeItems.get(0).test(pContainer.getItem(3))) {
+					if (recipeItems.get(1).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(2).test(pContainer.getItem(1))) {
+			if (recipeItems.get(0).test(pContainer.getItem(2))) {
+				if (recipeItems.get(1).test(pContainer.getItem(3))) {
+					if (recipeItems.get(3).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(2).test(pContainer.getItem(1))) {
+			if (recipeItems.get(1).test(pContainer.getItem(2))) {
+				if (recipeItems.get(3).test(pContainer.getItem(3))) {
+					if (recipeItems.get(0).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(2).test(pContainer.getItem(1))) {
+			if (recipeItems.get(3).test(pContainer.getItem(2))) {
+				if (recipeItems.get(1).test(pContainer.getItem(3))) {
+					if (recipeItems.get(0).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(2).test(pContainer.getItem(1))) {
+			if (recipeItems.get(0).test(pContainer.getItem(2))) {
+				if (recipeItems.get(3).test(pContainer.getItem(3))) {
+					if (recipeItems.get(1).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(3).test(pContainer.getItem(1))) {
+			if (recipeItems.get(0).test(pContainer.getItem(2))) {
+				if (recipeItems.get(1).test(pContainer.getItem(3))) {
+					if (recipeItems.get(2).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(3).test(pContainer.getItem(1))) {
+			if (recipeItems.get(1).test(pContainer.getItem(2))) {
+				if (recipeItems.get(2).test(pContainer.getItem(3))) {
+					if (recipeItems.get(0).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(3).test(pContainer.getItem(1))) {
+			if (recipeItems.get(2).test(pContainer.getItem(2))) {
+				if (recipeItems.get(0).test(pContainer.getItem(3))) {
+					if (recipeItems.get(1).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(3).test(pContainer.getItem(1))) {
+			if (recipeItems.get(2).test(pContainer.getItem(2))) {
+				if (recipeItems.get(1).test(pContainer.getItem(3))) {
+					if (recipeItems.get(0).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(3).test(pContainer.getItem(1))) {
+			if (recipeItems.get(1).test(pContainer.getItem(2))) {
+				if (recipeItems.get(0).test(pContainer.getItem(3))) {
+					if (recipeItems.get(2).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		if (recipeItems.get(3).test(pContainer.getItem(1))) {
+			if (recipeItems.get(0).test(pContainer.getItem(2))) {
+				if (recipeItems.get(2).test(pContainer.getItem(3))) {
+					if (recipeItems.get(1).test(pContainer.getItem(4))) {
+						ret = true;
+					}
+				}
+			}
+		}
+		
+		return ret;
 	}
 
 	@Override

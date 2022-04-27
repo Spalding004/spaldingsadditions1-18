@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:combinatrix",
+  "ingredients": [
+    {
+      "item": "minecraft:netherrack"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    }
+  ],
+  "output": {
+    "item": "spaldingsadditions:cobblerack"
+    
+  },
+  "count": 2,
+  "ticks": 60
+}

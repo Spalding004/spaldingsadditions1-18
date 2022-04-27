@@ -9,9 +9,9 @@
     }
   ],
   "output": {
-    "item": "spaldingsadditions:voidstone"
+    "item": "spaldingsadditions:voidstone_cobble"
     
   },
-  "count": 1,
+  "count": 2,
   "ticks": 30
 }

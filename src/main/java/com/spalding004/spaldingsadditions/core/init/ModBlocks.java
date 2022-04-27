@@ -152,4 +152,7 @@ public class ModBlocks {
 	
 	public static final RegistryObject<Block> AUTOFRAK = BLOCKS.register("autofrak", () -> new ModAutoFrak());
 	*/
+	
+	//combinatrix blocks
+	public static final RegistryObject<Block> COBBLERACK = BLOCKS.register("cobblerack", () -> new ModStone());
 }

@@ -45,6 +45,8 @@
 "item.spaldingsadditions.dimensional_conductor" : "Dimensional Conductor",
 "block.spaldingsadditions.vendar_casing" : "Vendar Machine Casing",
 
+"item.spaldingsadditions.steel_ingot" : "Steel Ingot",
+
 "item.spaldingsadditions.tool_vendar_pickaxe" : "Vendar Pickaxe",
 "item.spaldingsadditions.tool_vendar_axe" : "Vendar Axe",
 "item.spaldingsadditions.tool_vendar_sword" : "Vendar Sword",
@@ -155,6 +157,7 @@
 "block.spaldingsadditions.fabricator" : "Dimensional Fabricator",
 "block.spaldingsadditions.recombobulator" : "Lapal Recombobulator",
 "block.spaldingsadditions.frakhammer" : "Automatic Frakhammer",
+"block.spaldingsadditions.combinatrix" : "Essential Combinatrix",
 
 "block.spaldingsadditions.vironium_ore" : "Vironium Ore",
 "block.spaldingsadditions.geldar_ore" : "Geldar Ore",
@@ -169,7 +172,7 @@
 
 "container.spaldingsadditions.fabricator" : "Dimensional Fabricator",
 "container.spaldingsadditions.frakhammer" : "Automatic Frakhammer",
-
+"container.spaldingsadditions.combinatrix" : "Essential Combinatrix",
 "container.spaldingsadditions.recombobulator" : "Lapal Recombobulator",
 
 "itemGroup.mod_creative_tab" : "Spalding's Additions",

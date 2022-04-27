@@ -8,16 +8,16 @@
       "item": "minecraft:coal"
     },
     {
-      "item": "minecraft:coal"
+      "item": "minecraft:iron_ingot"
     },
     {
       "item": "minecraft:iron_ingot"
     }
   ],
   "output": {
-    "item": "minecraft:gold_ingot"
+    "item": "spaldingsadditions:steel_ingot"
     
   },
-  "count": 1,
-  "ticks": 300
+  "count": 2,
+  "ticks": 60
 }

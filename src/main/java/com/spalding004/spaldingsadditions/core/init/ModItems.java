@@ -42,6 +42,7 @@ public final class ModItems {
 		
 		public static final RegistryObject<Item> INDIRIUM_GEAR = ITEMS.register("indirium_gear", () -> new ModGenericItem());
 		public static final RegistryObject<Item> VENDAR_GEAR = ITEMS.register("vendar_gear", () -> new ModGenericItem());
+		public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () -> new ModGenericItem());
 		
 		public static final RegistryObject<Item> GELDAR_CHUNK = ITEMS.register("geldar_ore_chunk", () -> new ModGenericItem());
 		public static final RegistryObject<Item> VIRONIUM_CHUNK = ITEMS.register("vironium_ore_chunk", () -> new ModGenericItem());
