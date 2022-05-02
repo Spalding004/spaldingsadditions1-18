@@ -1,0 +1,49 @@
+{
+  "type": "spaldingsadditions:therend",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": 0,
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "spaldingsadditions:main_rend",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0.2,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:dark_forest",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0.1,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0.2
+          }
+        },
+        {
+          "biome": "minecraft:cold_ocean",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": -0.7,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}

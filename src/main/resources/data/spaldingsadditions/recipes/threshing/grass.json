@@ -1,0 +1,19 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "item" : "minecraft:grass_block"
+  } ],
+  "output" : {
+    "item" : "minecraft:dirt"
+  },
+  "count" : 1,
+  "ticks" : 80,
+  "chance1" : {
+    "item" : "minecraft:wheat_seeds"
+  },
+  "chance2" : {
+    "item" : "minecraft:pumpkin_seeds"
+  },"chance3" : {
+    "item" : "minecraft:beetroot_seeds"
+  }
+}

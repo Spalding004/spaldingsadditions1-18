@@ -5,6 +5,7 @@ import com.spalding004.spaldingsadditions.screen.combinatrix.CombinatrixMenu;
 import com.spalding004.spaldingsadditions.screen.fabricator.FabricatorMenu;
 import com.spalding004.spaldingsadditions.screen.frakhammer.FrakhammerMenu;
 import com.spalding004.spaldingsadditions.screen.recombobulator.RecombobulatorMenu;
+import com.spalding004.spaldingsadditions.screen.thresher.ThresherMenu;
 
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
@@ -30,6 +31,9 @@ public class ModMenuTypes {
     
     public static final RegistryObject<MenuType<CombinatrixMenu>> COMBINATRIX_MENU =
             registerMenuType(CombinatrixMenu::new, "combinatrix_menu");
+    
+    public static final RegistryObject<MenuType<ThresherMenu>> THRESHER_MENU =
+            registerMenuType(ThresherMenu::new, "thresher_menu");
 
 
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory,

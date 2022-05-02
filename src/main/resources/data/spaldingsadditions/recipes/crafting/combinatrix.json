@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "GCG",
+    "LZL"
+  ],
+  "key": {
+    "G": {
+       "item": "minecraft:crafting_table"
+    },
+    "I": {
+       "item": "spaldingsadditions:geldar_ingot"
+    },
+    "L": {
+       "item": "spaldingsadditions:vironium_ingot"
+    },
+    "Z": {
+       "item": "spaldingsadditions:energetic_crystal"
+    },
+    "C": {
+       "item": "spaldingsadditions:vendar_casing",
+       "data": 0
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:combinatrix"
+  }
+}

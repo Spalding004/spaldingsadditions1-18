@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "VVV",
+    "GCG",
+    "LZL"
+  ],
+  "key": {
+    "V": {
+       "item": "spaldingsadditions:indirium_ingot"
+    },
+    "G": {
+       "item": "spaldingsadditions:indirium_gear"
+    },
+    "L": {
+       "item": "spaldingsadditions:reduced_lapis_ingot"
+    },
+    "Z": {
+       "item": "minecraft:piston"
+    },
+    "C": {
+       "item": "spaldingsadditions:vendar_casing"
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:thresher"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "spaldingsadditions:combinatrix",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:diamond_sliver"
+    },
+    {
+      "item": "spaldingsadditions:diamond_sliver"
+    },
+    {
+      "item": "spaldingsadditions:diamond_sliver"
+    },
+    {
+      "item": "spaldingsadditions:diamond_sliver"
+    }
+  ],
+  "output": {
+    "item": "minecraft:diamond"
+    
+  },
+  "count": 1,
+  "ticks": 20
+}

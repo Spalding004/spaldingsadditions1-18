@@ -1,0 +1,19 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "item" : "minecraft:diamond_horse_armor"
+  } ],
+  "output" : {
+    "item" : "minecraft:diamond"
+  },
+  "count" : 2,
+  "ticks" : 80,
+  "chance1" : {
+    "item" : "minecraft:diamond"
+  },
+  "chance2" : {
+    "item" : "minecraft:leather"
+  },"chance3" : {
+    "item" : "minecraft:leather"
+  }
+}

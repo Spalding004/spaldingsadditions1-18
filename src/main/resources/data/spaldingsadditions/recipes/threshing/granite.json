@@ -1,0 +1,19 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "item" : "minecraft:granite"
+  } ],
+  "output" : {
+    "item" : "minecraft:quartz"
+  },
+  "count" : 2,
+  "ticks" : 80,
+  "chance1" : {
+    "item" : "minecraft:quartz"
+  },
+  "chance2" : {
+    "item" : "minecraft:cobblestone"
+  },"chance3" : {
+    "item" : "minecraft:coal"
+  }
+}

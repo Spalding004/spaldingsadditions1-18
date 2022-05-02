@@ -1,0 +1,20 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "item" : "minecraft:woven_leather"
+  } ],
+  "output" : {
+    "item" : "minecraft:leather"
+  },
+  "count" : 3,
+  "ticks" : 80,
+  "chance1" : {
+    "item" : "minecraft:leather"
+  },
+  "chance2" : {
+    "item" : "minecraft:string"
+  },
+  "chance3" : {
+    "item" : "minecraft:string"
+  }
+}

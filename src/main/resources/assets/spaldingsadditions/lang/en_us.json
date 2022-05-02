@@ -2,6 +2,7 @@
 
 
 "item.spaldingsadditions.vendar_chunk" : "Raw Vendar",
+"item.spaldingsadditions.diamond_sliver" : "Diamond Sliver",
 "item.spaldingsadditions.iron_chunk" : "Iron Ore Chunk",
 "item.spaldingsadditions.gold_chunk" : "Gold Ore Chunk",
 "item.spaldingsadditions.umber_gold_chunk" : "Umber Gold Ore Chunk",
@@ -14,7 +15,12 @@
 "item.spaldingsadditions.reduced_lapis_nugget" : "Reduced Lapis Nugget",
 "item.spaldingsadditions.reduced_lapis_ingot" : "Reduced Lapis Ingot",
 
+"item.spaldingsadditions.sawblade" : "Diamond-Tipped Indirium Shredder",
+
 "item.spaldingsadditions.saving_book" : "Book O' Protection",
+
+"item.spaldingsadditions.raw_cheval" : "Raw Cheval",
+"item.spaldingsadditions.cheval_steak" : "Cheval Steak",
 
 "item.spaldingsadditions.vironium_nugget" : "Vironium Nugget",
 "item.spaldingsadditions.vironium_ingot" : "Vironium Ingot",
@@ -162,6 +168,7 @@
 "block.spaldingsadditions.fabricator" : "Dimensional Fabricator",
 "block.spaldingsadditions.recombobulator" : "Lapal Recombobulator",
 "block.spaldingsadditions.frakhammer" : "Automatic Frakhammer",
+"block.spaldingsadditions.thresher" : "Attenuated Thresher",
 "block.spaldingsadditions.combinatrix" : "Essential Combinatrix",
 
 "block.spaldingsadditions.vironium_ore" : "Vironium Ore",
@@ -179,6 +186,7 @@
 "container.spaldingsadditions.frakhammer" : "Automatic Frakhammer",
 "container.spaldingsadditions.combinatrix" : "Essential Combinatrix",
 "container.spaldingsadditions.recombobulator" : "Lapal Recombobulator",
+"container.spaldingsadditions.thresher" : "Attenuated Thresher",
 
 "itemGroup.mod_creative_tab" : "Spalding's Additions",
 

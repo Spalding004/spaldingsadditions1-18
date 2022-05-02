@@ -1,0 +1,16 @@
+{
+  "type": "spaldingsadditions:frakhammer",
+  "ingredients": [
+   
+    {
+      "item": "spaldingsadditions:tool_vendar_frakhammer"
+    },
+     {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "output": {
+    "item": "spaldingsadditions:diamond_sliver"
+  },
+  "count": 4
+}

@@ -5,6 +5,7 @@ import com.spalding004.spaldingsadditions.core.objects.blocks.entity.Combinatrix
 import com.spalding004.spaldingsadditions.core.objects.blocks.entity.FabricatorBlockEntity;
 import com.spalding004.spaldingsadditions.core.objects.blocks.entity.FrakhammerBlockEntity;
 import com.spalding004.spaldingsadditions.core.objects.blocks.entity.RecombobulatorBlockEntity;
+import com.spalding004.spaldingsadditions.core.objects.blocks.entity.ThresherBlockEntity;
 
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -29,6 +30,9 @@ public class ModBlockEntities {
 	
 	public static final RegistryObject<BlockEntityType<CombinatrixBlockEntity>> COMBINATRIX = BLOCK_ENTITIES.register("combinatrix",
 			() -> BlockEntityType.Builder.of(CombinatrixBlockEntity::new, ModBlocks.COMBINATRIX.get()).build(null));
+	
+	public static final RegistryObject<BlockEntityType<ThresherBlockEntity>> THRESHER = BLOCK_ENTITIES.register("thresher",
+			() -> BlockEntityType.Builder.of(ThresherBlockEntity::new, ModBlocks.THRESHER.get()).build(null));
 	
 	
 	public static void register(IEventBus eventBus) {

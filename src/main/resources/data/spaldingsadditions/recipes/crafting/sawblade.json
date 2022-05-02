@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "DVD",
+    " D "
+  ],
+  "key": {
+    "V": {
+       "item": "spaldingsadditions:indirium_gear"
+    },
+    "D": {
+       "item": "spaldingsadditions:diamond_sliver"
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:sawblade"
+  }
+}

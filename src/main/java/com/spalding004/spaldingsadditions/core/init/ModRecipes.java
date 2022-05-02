@@ -4,6 +4,7 @@ import com.spalding004.spaldingsadditions.SpaldingsAdditions;
 import com.spalding004.spaldingsadditions.recipes.CombinatrixRecipe;
 import com.spalding004.spaldingsadditions.recipes.DimensionalFabricatorRecipe;
 import com.spalding004.spaldingsadditions.recipes.FrakhammerRecipe;
+import com.spalding004.spaldingsadditions.recipes.ThresherRecipe;
 
 import net.minecraft.core.Registry;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -25,6 +26,9 @@ public class ModRecipes {
 	
 	public static final RegistryObject<RecipeSerializer<CombinatrixRecipe>> COMBINATRIX_RECIPE_SERIALIZER =
 			SERIALIZERS.register("combinatrix", () -> CombinatrixRecipe.Serializer.INSTANCE);
+	
+	public static final RegistryObject<RecipeSerializer<ThresherRecipe>> THRESHER_RECIPE_SERIALIZER =
+			SERIALIZERS.register("thresher", () -> ThresherRecipe.Serializer.INSTANCE);
 	
 	  public static void register(IEventBus eventBus) {
 	        SERIALIZERS.register(eventBus);

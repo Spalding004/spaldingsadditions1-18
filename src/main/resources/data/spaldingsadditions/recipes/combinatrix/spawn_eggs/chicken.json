@@ -1,0 +1,23 @@
+{
+  "type": "spaldingsadditions:combinatrix",
+  "ingredients": [
+    {
+      "item": "minecraft:chicken"
+    },
+    {
+      "item": "minecraft:experience_bottle"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "spaldingsadditions:energetic_crystal"
+    }
+  ],
+  "output": {
+    "item": "minecraft:chicken_spawn_egg"
+    
+  },
+  "count": 1,
+  "ticks": 120
+}

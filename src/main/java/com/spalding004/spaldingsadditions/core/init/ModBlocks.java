@@ -10,7 +10,6 @@ import com.spalding004.spaldingsadditions.core.objects.blocks.ModFenceBlock;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModFlammablePillar;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModFrakhammer;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModLeaves;
-import com.spalding004.spaldingsadditions.core.objects.blocks.ModLeavesGrowable;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModLeavesMealable;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModMachineCasing;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModOre;
@@ -21,6 +20,7 @@ import com.spalding004.spaldingsadditions.core.objects.blocks.ModSlabWooden;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModStairsWooden;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModStone;
 import com.spalding004.spaldingsadditions.core.objects.blocks.ModThinLog;
+import com.spalding004.spaldingsadditions.core.objects.blocks.ModThresher;
 import com.spalding004.spaldingsadditions.world.features.tree.BeechTreeGrower;
 import com.spalding004.spaldingsadditions.world.features.tree.CrapeTreeGrower;
 
@@ -117,6 +117,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> FRAKHAMMER = BLOCKS.register("frakhammer", () -> new ModFrakhammer());
 	public static final RegistryObject<Block> RECOMBOBULATOR = BLOCKS.register("recombobulator", () -> new ModRecombobulator());	
 	public static final RegistryObject<Block> COMBINATRIX = BLOCKS.register("combinatrix", () -> new ModCombinatrix());	
+	public static final RegistryObject<Block> THRESHER = BLOCKS.register("thresher", () -> new ModThresher());	
 	
 	public static final RegistryObject<Block> VENDAR_CASING = BLOCKS.register("vendar_casing", () -> new ModMachineCasing());
 	

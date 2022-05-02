@@ -1,0 +1,19 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "item" : "minecraft:deepslate_diamond_ore"
+  } ],
+  "output" : {
+    "item" : "minecraft:diamond"
+  },
+  "count" : 1,
+  "ticks" : 80,
+  "chance1" : {
+    "item" : "minecraft:diamond"
+  },
+  "chance2" : {
+    "item" : "minecraft:cobbled_deepslate"
+  },"chance3" : {
+    "item" : "spaldingsadditions:diamond_sliver"
+  }
+}

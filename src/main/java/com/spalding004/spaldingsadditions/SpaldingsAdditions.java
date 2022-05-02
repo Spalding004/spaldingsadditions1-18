@@ -16,6 +16,7 @@ import com.spalding004.spaldingsadditions.core.init.ModItems;
 import com.spalding004.spaldingsadditions.core.init.ModRecipes;
 import com.spalding004.spaldingsadditions.core.init.ModStructures;
 import com.spalding004.spaldingsadditions.core.init.TransparentBlocks;
+import com.spalding004.spaldingsadditions.events.loot_modifiers.ChevalMeatHorse;
 import com.spalding004.spaldingsadditions.events.loot_modifiers.DungeonChestModifier;
 import com.spalding004.spaldingsadditions.events.loot_modifiers.ModDropsModifier;
 import com.spalding004.spaldingsadditions.events.loot_modifiers.StrongholdLibraryModifier;
@@ -28,6 +29,7 @@ import com.spalding004.spaldingsadditions.screen.combinatrix.CombinatrixScreen;
 import com.spalding004.spaldingsadditions.screen.fabricator.FabricatorScreen;
 import com.spalding004.spaldingsadditions.screen.frakhammer.FrakhammerScreen;
 import com.spalding004.spaldingsadditions.screen.recombobulator.RecombobulatorScreen;
+import com.spalding004.spaldingsadditions.screen.thresher.ThresherScreen;
 import com.spalding004.spaldingsadditions.utils.ModTags;
 import com.spalding004.spaldingsadditions.world.features.underground.ModOreGeneration;
 
@@ -124,6 +126,7 @@ public class SpaldingsAdditions {
 		MenuScreens.register(ModMenuTypes.FRAKHAMMER_MENU.get(), FrakhammerScreen::new);
 		MenuScreens.register(ModMenuTypes.RECOMBOBULATOR_MENU.get(), RecombobulatorScreen::new);
 		MenuScreens.register(ModMenuTypes.COMBINATRIX_MENU.get(), CombinatrixScreen::new);
+		MenuScreens.register(ModMenuTypes.THRESHER_MENU.get(), ThresherScreen::new);
 	}
 
 	private void processIMC(final InterModProcessEvent event) {
@@ -154,6 +157,9 @@ public class SpaldingsAdditions {
 		
 		event.getRegistry().register(new StrongholdLibraryModifier.Serializer()
 				.setRegistryName(new ResourceLocation(SpaldingsAdditions.MOD_ID, "saving_book_village")));
+		
+		event.getRegistry().register(new ChevalMeatHorse.Serializer()
+				.setRegistryName(new ResourceLocation(SpaldingsAdditions.MOD_ID, "cheval_horse")));
 
 	}
 	

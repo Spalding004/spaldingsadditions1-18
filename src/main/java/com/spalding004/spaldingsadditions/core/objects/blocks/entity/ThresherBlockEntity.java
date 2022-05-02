@@ -1,6 +1,7 @@
 package com.spalding004.spaldingsadditions.core.objects.blocks.entity;
 
 import java.util.Optional;
+import java.util.Random;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -8,10 +9,9 @@ import javax.annotation.Nullable;
 import org.jetbrains.annotations.NotNull;
 
 import com.spalding004.spaldingsadditions.core.init.ModBlockEntities;
-import com.spalding004.spaldingsadditions.core.init.ModItems;
-import com.spalding004.spaldingsadditions.recipes.CombinatrixRecipe;
+import com.spalding004.spaldingsadditions.recipes.ThresherRecipe;
 import com.spalding004.spaldingsadditions.recipes.fuels.LapalFuel;
-import com.spalding004.spaldingsadditions.screen.combinatrix.CombinatrixMenu;
+import com.spalding004.spaldingsadditions.screen.thresher.ThresherMenu;
 import com.spalding004.spaldingsadditions.utils.TextUtils;
 
 import net.minecraft.core.BlockPos;
@@ -26,7 +26,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -37,20 +36,20 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
-public class CombinatrixBlockEntity extends BlockEntity implements MenuProvider {
+public class ThresherBlockEntity extends BlockEntity implements MenuProvider {
 
 	@Nullable
 	@Override
 	public AbstractContainerMenu createMenu(int containerID, Inventory inventory, Player player) {
 
-		return new CombinatrixMenu(containerID, inventory, this, this.data);
+		return new ThresherMenu(containerID, inventory, this, this.data);
 	}
 
-	private final ItemStackHandler itemHandler = new ItemStackHandler(6) {
+	private final ItemStackHandler itemHandler = new ItemStackHandler(7) {
 
 		@Override
 		protected void onContentsChanged(int slot) {
-			
+
 		}
 
 	};
@@ -67,27 +66,27 @@ public class CombinatrixBlockEntity extends BlockEntity implements MenuProvider 
 	private int slot3;
 	private int slot4;
 
-	public CombinatrixBlockEntity(BlockPos pWorldPosition, BlockState pBlockState) {
-		super(ModBlockEntities.COMBINATRIX.get(), pWorldPosition, pBlockState);
+	public ThresherBlockEntity(BlockPos pWorldPosition, BlockState pBlockState) {
+		super(ModBlockEntities.THRESHER.get(), pWorldPosition, pBlockState);
 		this.data = new ContainerData() {
 			public int get(int index) {
 				switch (index) {
 				case 0:
-					return CombinatrixBlockEntity.this.progress;
+					return ThresherBlockEntity.this.progress;
 				case 1:
-					return CombinatrixBlockEntity.this.maxProgress;
+					return ThresherBlockEntity.this.maxProgress;
 				case 2:
-					return CombinatrixBlockEntity.this.fuelTime;
+					return ThresherBlockEntity.this.fuelTime;
 				case 3:
-					return CombinatrixBlockEntity.this.maxFuelTime;
+					return ThresherBlockEntity.this.maxFuelTime;
 				case 4:
-					return CombinatrixBlockEntity.this.slot1;
+					return ThresherBlockEntity.this.slot1;
 				case 5:
-					return CombinatrixBlockEntity.this.slot2;
+					return ThresherBlockEntity.this.slot2;
 				case 6:
-					return CombinatrixBlockEntity.this.slot3;
+					return ThresherBlockEntity.this.slot3;
 				case 7:
-					return CombinatrixBlockEntity.this.slot4;
+					return ThresherBlockEntity.this.slot4;
 				default:
 					return 0;
 				}
@@ -96,28 +95,28 @@ public class CombinatrixBlockEntity extends BlockEntity implements MenuProvider 
 			public void set(int index, int value) {
 				switch (index) {
 				case 0:
-					CombinatrixBlockEntity.this.progress = value;
+					ThresherBlockEntity.this.progress = value;
 					break;
 				case 1:
-					CombinatrixBlockEntity.this.maxProgress = value;
+					ThresherBlockEntity.this.maxProgress = value;
 					break;
 				case 2:
-					CombinatrixBlockEntity.this.fuelTime = value;
+					ThresherBlockEntity.this.fuelTime = value;
 					break;
 				case 3:
-					CombinatrixBlockEntity.this.maxFuelTime = value;
+					ThresherBlockEntity.this.maxFuelTime = value;
 					break;
 				case 4:
-					CombinatrixBlockEntity.this.slot1 = value;
+					ThresherBlockEntity.this.slot1 = value;
 					break;
 				case 5:
-					CombinatrixBlockEntity.this.slot2 = value;
+					ThresherBlockEntity.this.slot2 = value;
 					break;
 				case 6:
-					CombinatrixBlockEntity.this.slot3 = value;
+					ThresherBlockEntity.this.slot3 = value;
 					break;
 				case 7:
-					CombinatrixBlockEntity.this.slot4 = value;
+					ThresherBlockEntity.this.slot4 = value;
 					break;
 				}
 			}
@@ -131,7 +130,7 @@ public class CombinatrixBlockEntity extends BlockEntity implements MenuProvider 
 	@Override
 	public Component getDisplayName() {
 
-		return TextUtils.translate("container", "combinatrix", "");
+		return TextUtils.translate("container", "thresher", "");
 	}
 
 	@Nonnull
@@ -203,12 +202,14 @@ public class CombinatrixBlockEntity extends BlockEntity implements MenuProvider 
 		}
 	}
 
-	public static void tick(Level pLevel, BlockPos pPos, BlockState pState, CombinatrixBlockEntity pBlockEntity) {
+	public static void tick(Level pLevel, BlockPos pPos, BlockState pState, ThresherBlockEntity pBlockEntity) {
+	
+		
+		
+	
 
 		checkSlots(pBlockEntity.itemHandler, pBlockEntity);
-		
-		
-		
+
 		if (hasRecipe(pBlockEntity))
 			if (pBlockEntity.fuelTime > 0)
 				pBlockEntity.fuelTime--;
@@ -235,7 +236,7 @@ public class CombinatrixBlockEntity extends BlockEntity implements MenuProvider 
 		}
 	}
 
-	private static void checkSlots(ItemStackHandler itemHandler, CombinatrixBlockEntity pBlockEntity) {
+	private static void checkSlots(ItemStackHandler itemHandler, ThresherBlockEntity pBlockEntity) {
 
 		if (itemHandler.getStackInSlot(1) != ItemStack.EMPTY) {
 
@@ -244,7 +245,7 @@ public class CombinatrixBlockEntity extends BlockEntity implements MenuProvider 
 
 			pBlockEntity.setSlot1(0);
 		}
-		
+
 		if (itemHandler.getStackInSlot(2) != ItemStack.EMPTY) {
 
 			pBlockEntity.setSlot2(1);
@@ -252,7 +253,7 @@ public class CombinatrixBlockEntity extends BlockEntity implements MenuProvider 
 
 			pBlockEntity.setSlot2(0);
 		}
-		
+
 		if (itemHandler.getStackInSlot(3) != ItemStack.EMPTY) {
 
 			pBlockEntity.setSlot3(1);
@@ -267,26 +268,26 @@ public class CombinatrixBlockEntity extends BlockEntity implements MenuProvider 
 
 			pBlockEntity.setSlot4(0);
 		}
-		
+
 	}
 
-	private static boolean hasFuelInFuelSlot(CombinatrixBlockEntity entity) {
+	private static boolean hasFuelInFuelSlot(ThresherBlockEntity entity) {
 		return !entity.itemHandler.getStackInSlot(0).isEmpty();
 	}
 
-	private static boolean isConsumingFuel(CombinatrixBlockEntity entity) {
+	private static boolean isConsumingFuel(ThresherBlockEntity entity) {
 		return entity.fuelTime > 0;
 	}
 
-	private static boolean hasRecipe(CombinatrixBlockEntity entity) {
+	private static boolean hasRecipe(ThresherBlockEntity entity) {
 		Level level = entity.level;
 		SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
 		for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
 			inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
 		}
 
-		Optional<CombinatrixRecipe> match = level.getRecipeManager().getRecipeFor(CombinatrixRecipe.Type.INSTANCE,
-				inventory, level);
+		Optional<ThresherRecipe> match = level.getRecipeManager().getRecipeFor(ThresherRecipe.Type.INSTANCE, inventory,
+				level);
 
 		if (match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
 				&& canInsertItemIntoOutputSlot(inventory, match.get().getResultItem())) {
@@ -294,28 +295,51 @@ public class CombinatrixBlockEntity extends BlockEntity implements MenuProvider 
 		}
 
 		return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
-				&& canInsertItemIntoOutputSlot(inventory, match.get().getResultItem());
+				&& canInsertItemIntoOutputSlot(inventory, match.get().getResultItem()) && (inventory.getItem(1).getCount() == 1);
 	}
 
-	private static void craftItem(CombinatrixBlockEntity entity) {
+	private static void craftItem(ThresherBlockEntity entity) {
 		Level level = entity.level;
+		Random rand = new Random();
 		SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
 		for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
 			inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
 		}
 
-		Optional<CombinatrixRecipe> match = level.getRecipeManager().getRecipeFor(CombinatrixRecipe.Type.INSTANCE,
-				inventory, level);
+		Optional<ThresherRecipe> match = level.getRecipeManager().getRecipeFor(ThresherRecipe.Type.INSTANCE, inventory,
+				level);
 
 		if (match.isPresent()) {
 			// entity.itemHandler.extractItem(1,1, false);
-			entity.itemHandler.extractItem(1, 1, false);
+
+			ItemStack catalyst = entity.itemHandler.getStackInSlot(1);
+			int catDamage = catalyst.getDamageValue();
+			if (catDamage < catalyst.getMaxDamage() - 1) {
+				catalyst.setDamageValue(catDamage + 1);
+				entity.itemHandler.setStackInSlot(1, catalyst);
+			} else {
+				entity.itemHandler.setStackInSlot(1, ItemStack.EMPTY);
+			}
+
 			entity.itemHandler.extractItem(2, 1, false);
-			entity.itemHandler.extractItem(3, 1, false);
-			entity.itemHandler.extractItem(4, 1, false);
-			entity.itemHandler.setStackInSlot(5, new ItemStack(match.get().getResultItem().getItem(),
-			entity.itemHandler.getStackInSlot(5).getCount() + match.get().getResultItem().getCount()));
-			
+
+			entity.itemHandler.setStackInSlot(3, new ItemStack(match.get().getResultItem().getItem(),
+					entity.itemHandler.getStackInSlot(3).getCount() + match.get().getResultItem().getCount()));
+			if (canInsertItemIntoSlot(inventory, match.get().getChances().get(0), 4)) {
+				if (rand.nextInt(100) < 40)
+					entity.itemHandler.setStackInSlot(4, new ItemStack(match.get().getChances().get(0).getItem(),
+							entity.itemHandler.getStackInSlot(4).getCount() + 1));
+			}
+			if (canInsertItemIntoSlot(inventory, match.get().getChances().get(1), 5)) {
+				if (rand.nextInt(100) < 20)
+					entity.itemHandler.setStackInSlot(5, new ItemStack(match.get().getChances().get(1).getItem(),
+							entity.itemHandler.getStackInSlot(5).getCount() + 1));
+			}
+			if (canInsertItemIntoSlot(inventory, match.get().getChances().get(2), 6)) {
+				if (rand.nextInt(100) < 5)
+					entity.itemHandler.setStackInSlot(6, new ItemStack(match.get().getChances().get(2).getItem(),
+							entity.itemHandler.getStackInSlot(6).getCount() + 1));
+			}
 
 			entity.resetProgress();
 		} else {
@@ -326,28 +350,34 @@ public class CombinatrixBlockEntity extends BlockEntity implements MenuProvider 
 	private void setSlot1(int i) {
 		this.slot1 = i;
 	}
-	
+
 	private void setSlot2(int i) {
 		this.slot2 = i;
 	}
-	
+
 	private void setSlot3(int i) {
 		this.slot3 = i;
 	}
-	
+
 	private void setSlot4(int i) {
 		this.slot4 = i;
 	}
-	
+
 	private void resetProgress() {
 		this.progress = 0;
 	}
 
 	private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack output) {
-		return inventory.getItem(5).getItem() == output.getItem() || inventory.getItem(5).isEmpty();
+		return inventory.getItem(3).getItem() == output.getItem() || inventory.getItem(3).isEmpty();
+	}
+
+	private static boolean canInsertItemIntoSlot(SimpleContainer inventory, ItemStack output, int slot) {
+		return (inventory.getItem(slot).getItem() == output.getItem()
+				&& inventory.getItem(slot).getMaxStackSize() > inventory.getItem(slot).getCount())
+				|| inventory.getItem(slot).isEmpty();
 	}
 
 	private static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory) {
-		return inventory.getItem(5).getMaxStackSize() > inventory.getItem(5).getCount();
+		return inventory.getItem(3).getMaxStackSize() > inventory.getItem(3).getCount();
 	}
 }

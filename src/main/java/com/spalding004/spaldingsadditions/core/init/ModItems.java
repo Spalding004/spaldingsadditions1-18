@@ -5,6 +5,7 @@ import com.spalding004.spaldingsadditions.SpaldingsAdditions.ModItemGroup;
 import com.spalding004.spaldingsadditions.core.init.ModToolTiers.ModItemTiers;
 import com.spalding004.spaldingsadditions.core.objects.items.ModDamageableItem;
 import com.spalding004.spaldingsadditions.core.objects.items.ModDimensionalCard;
+import com.spalding004.spaldingsadditions.core.objects.items.ModFoodItem;
 import com.spalding004.spaldingsadditions.core.objects.items.ModGenericItem;
 import com.spalding004.spaldingsadditions.core.objects.items.ModNetherGaze;
 import com.spalding004.spaldingsadditions.core.objects.items.ModNetherPearl;
@@ -92,6 +93,12 @@ public final class ModItems {
 		public static final RegistryObject<Item> SAWDUST = ITEMS.register("sawdust", () -> new ModGenericItem());
 		public static final RegistryObject<Item> WOOD_PULP = ITEMS.register("wood_pulp", () -> new ModGenericItem());
 		
+		public static final RegistryObject<Item> SAWBLADE = ITEMS.register("sawblade", () -> new ModDamageableItem(120));
+		public static final RegistryObject<Item> DIAMOND_SLIVER = ITEMS.register("diamond_sliver", () -> new ModGenericItem());
+		//foods
+		
+		public static final RegistryObject<Item> RAW_CHEVAL = ITEMS.register("raw_cheval", () -> new ModFoodItem(ModFoods.RAW_CHEVAL));
+		public static final RegistryObject<Item> CHEVAL_STEAK = ITEMS.register("cheval_steak", () -> new ModFoodItem(ModFoods.CHEVAL_STEAK));
 		
 		
 	
