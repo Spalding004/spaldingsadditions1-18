@@ -9,6 +9,7 @@ import javax.annotation.Nullable;
 import org.jetbrains.annotations.NotNull;
 
 import com.spalding004.spaldingsadditions.core.init.ModBlockEntities;
+import com.spalding004.spaldingsadditions.core.init.ModBlocks;
 import com.spalding004.spaldingsadditions.recipes.ThresherRecipe;
 import com.spalding004.spaldingsadditions.recipes.fuels.LapalFuel;
 import com.spalding004.spaldingsadditions.screen.thresher.ThresherMenu;
@@ -25,7 +26,9 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -294,8 +297,9 @@ public class ThresherBlockEntity extends BlockEntity implements MenuProvider {
 			entity.maxProgress = match.get().getTicks();
 		}
 
-		return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
-				&& canInsertItemIntoOutputSlot(inventory, match.get().getResultItem()) && (inventory.getItem(1).getCount() == 1);
+		return (match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
+				&& canInsertItemIntoOutputSlot(inventory, match.get().getResultItem()) && (inventory.getItem(1).getCount() == 1) || 
+				(inventory.getItem(2).getItem() == Items.NETHER_STAR && canInsertItemIntoSlot(inventory, new ItemStack(ModBlocks.ENERGETIC_ORE.get()), 3)));
 	}
 
 	private static void craftItem(ThresherBlockEntity entity) {
@@ -323,8 +327,16 @@ public class ThresherBlockEntity extends BlockEntity implements MenuProvider {
 
 			entity.itemHandler.extractItem(2, 1, false);
 
-			entity.itemHandler.setStackInSlot(3, new ItemStack(match.get().getResultItem().getItem(),
+			Item resultItem = match.get().getResultItem().getItem();
+			
+			if(inventory.getItem(2).getItem() == Items.NETHER_STAR) {
+				entity.itemHandler.setStackInSlot(3, new ItemStack(ModBlocks.ENERGETIC_ORE.get(),
+						entity.itemHandler.getStackInSlot(3).getCount() + 5));
+			} else {
+			entity.itemHandler.setStackInSlot(3, new ItemStack(resultItem,
 					entity.itemHandler.getStackInSlot(3).getCount() + match.get().getResultItem().getCount()));
+			}
+			
 			if (canInsertItemIntoSlot(inventory, match.get().getChances().get(0), 4)) {
 				if (rand.nextInt(100) < 40)
 					entity.itemHandler.setStackInSlot(4, new ItemStack(match.get().getChances().get(0).getItem(),

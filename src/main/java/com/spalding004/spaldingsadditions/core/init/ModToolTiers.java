@@ -10,10 +10,10 @@ public class ModToolTiers {
 	
 	
 	public enum ModItemTiers implements Tier {
-		VENDAR(3121, 9.0F, 2.5F, 4, 16, () -> {
+		VENDAR(3121, 9.0F, 3.5F, 4, 16, () -> {
 		return Ingredient.of(ModItems.VENDAR_INGOT.get());
 	}),
-		VENDAR_FRAK(512, 9.0F, 2.5F, 4, 16, () -> {
+		VENDAR_FRAK(512, 9.0F, 4.5F, 4, 16, () -> {
 		return Ingredient.of(ModItems.VENDAR_INGOT.get());
 	});;
 		

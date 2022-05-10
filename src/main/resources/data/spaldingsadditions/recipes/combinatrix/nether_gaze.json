@@ -1,0 +1,23 @@
+{
+  "type": "spaldingsadditions:combinatrix",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:end_essence"
+    },
+    {
+      "item": "spaldingsadditions:end_essence"
+    },
+    {
+      "item": "spaldingsadditions:end_essence"
+    },
+    {
+      "item": "spaldingsadditions:nether_pearl"
+    }
+  ],
+  "output": {
+    "item": "spaldingsadditions:nether_gaze"
+    
+  },
+  "count": 1,
+  "ticks": 40
+}

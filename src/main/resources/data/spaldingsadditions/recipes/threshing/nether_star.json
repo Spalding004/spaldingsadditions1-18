@@ -1,0 +1,12 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "item" : "spaldingsadditions:unknown_item"
+  } ],
+  "output" : {
+    "item" : "spaldingsadditions:energetic_ore"
+  },
+  "count" : 5,
+  "ticks" : 80
+ 
+}

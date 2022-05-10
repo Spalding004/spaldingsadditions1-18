@@ -1,0 +1,19 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "item" : "spaldingsadditions:coal_ore_diamond"
+  } ],
+  "output" : {
+    "item" : "minecraft:coal"
+  },
+  "count" : 1,
+  "ticks" : 80,
+  "chance1" : {
+    "item" : "minecraft:diamond"
+  },
+  "chance2" : {
+    "item" : "spaldingsadditions:diamond_sliver"
+  },"chance3" : {
+    "item" : "spaldingsadditions:dust_silver_fine"
+  }
+}

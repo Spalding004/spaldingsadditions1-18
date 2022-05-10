@@ -1,7 +1,7 @@
 {
   "type" : "spaldingsadditions:thresher",
   "ingredients" : [ {
-    "item" : "minecraft:woven_leather"
+    "item" : "spaldingsadditions:woven_leather"
   } ],
   "output" : {
     "item" : "minecraft:leather"

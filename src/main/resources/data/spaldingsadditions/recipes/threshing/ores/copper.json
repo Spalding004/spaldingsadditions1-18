@@ -1,0 +1,16 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "tag" : "forge:ores/copper"
+  } ],
+  "output" : {
+    "item" : "minecraft:copper"
+  },
+  "count" : 1,
+  "ticks" : 80,
+  "chance2" : {
+    "item" : "minecraft:copper"
+  },"chance3" : {
+    "item" : "spaldingsadditions:dust_silver_fine"
+  }
+}

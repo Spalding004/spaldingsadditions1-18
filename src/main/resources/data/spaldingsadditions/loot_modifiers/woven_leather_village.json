@@ -1,0 +1,11 @@
+{
+  "type": "spaldingsadditions:woven_leather_village",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_tannery"
+    }
+  ],
+  "addition": "spaldingsadditions:woven_leather"
+
+}

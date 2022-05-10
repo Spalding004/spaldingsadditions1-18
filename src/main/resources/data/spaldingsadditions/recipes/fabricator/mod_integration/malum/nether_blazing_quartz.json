@@ -1,0 +1,17 @@
+{
+  "type": "spaldingsadditions:fabricator",
+  "ingredients": [
+    {
+      "item": "spaldingsadditions:card_nether"
+    },
+    {
+      "item": "minecraft:quartz"
+    }
+  ],
+  "output": {
+    "item": "malum:blazing_quartz"
+    
+  },
+  "count": 1,
+  "ticks": 75
+}

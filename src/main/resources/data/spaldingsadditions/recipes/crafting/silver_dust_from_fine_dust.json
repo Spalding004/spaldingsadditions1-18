@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "spaldingsadditions:dust_silver_fine",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:dust_silver",
+    "count": 1
+  }
+}
+

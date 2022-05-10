@@ -1,0 +1,14 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "item" : "minecraft:flint"
+  } ],
+  "output" : {
+    "item" : "minecraft:gunpowder"
+  },
+  "count" : 1,
+  "ticks" : 90,
+  "chance1" : {
+    "item" : "minecraft:gunpowder"
+  }
+}

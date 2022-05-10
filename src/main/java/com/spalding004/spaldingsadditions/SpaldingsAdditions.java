@@ -18,6 +18,7 @@ import com.spalding004.spaldingsadditions.core.init.ModStructures;
 import com.spalding004.spaldingsadditions.core.init.TransparentBlocks;
 import com.spalding004.spaldingsadditions.events.loot_modifiers.ChevalMeatHorse;
 import com.spalding004.spaldingsadditions.events.loot_modifiers.DungeonChestModifier;
+import com.spalding004.spaldingsadditions.events.loot_modifiers.DungeonChestModifierCommon;
 import com.spalding004.spaldingsadditions.events.loot_modifiers.ModDropsModifier;
 import com.spalding004.spaldingsadditions.events.loot_modifiers.StrongholdLibraryModifier;
 import com.spalding004.spaldingsadditions.events.loot_modifiers.WitheredCardBastionModifier;
@@ -160,6 +161,9 @@ public class SpaldingsAdditions {
 		
 		event.getRegistry().register(new ChevalMeatHorse.Serializer()
 				.setRegistryName(new ResourceLocation(SpaldingsAdditions.MOD_ID, "cheval_horse")));
+		
+		event.getRegistry().register(new DungeonChestModifierCommon.Serializer()
+				.setRegistryName(new ResourceLocation(SpaldingsAdditions.MOD_ID, "woven_leather_village")));
 
 	}
 	

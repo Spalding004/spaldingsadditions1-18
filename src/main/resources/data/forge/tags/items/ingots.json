@@ -1,0 +1,11 @@
+{
+  "replace" : false,
+  "values" : [ 
+  "spaldingsadditions:ingot_silver",
+   "spaldingsadditions:steel_ingot",
+   "spaldingsadditions:indirium_ingot",
+   "spaldingsadditions:vendar_ingot",
+   "spaldingsadditions:geldar_ingot",
+   "spaldingsadditions:vironium_ingot"
+  ]
+}

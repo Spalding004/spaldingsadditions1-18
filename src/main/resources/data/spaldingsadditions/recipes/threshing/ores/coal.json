@@ -1,0 +1,16 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "tag" : "forge:ores/coal"
+  } ],
+  "output" : {
+    "item" : "minecraft:coal"
+  },
+  "count" : 1,
+  "ticks" : 80,
+  "chance2" : {
+    "item" : "minecraft:coal"
+  },"chance3" : {
+    "item" : "spaldingsadditions:dust_silver_fine"
+  }
+}

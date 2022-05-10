@@ -1,0 +1,16 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "tag" : "forge:ores/lapis"
+  } ],
+  "output" : {
+    "item" : "minecraft:lapis_lazuli"
+  },
+  "count" : 4,
+  "ticks" : 80,
+  "chance2" : {
+    "item" : "minecraft:lapis_lazuli"
+  },"chance3" : {
+    "item" : "spaldingsadditions:dust_silver_fine"
+  }
+}

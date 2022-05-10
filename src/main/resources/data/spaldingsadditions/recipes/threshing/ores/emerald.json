@@ -1,0 +1,16 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "tag" : "forge:ores/emerald"
+  } ],
+  "output" : {
+    "item" : "minecraft:emerald"
+  },
+  "count" : 1,
+  "ticks" : 80,
+  "chance2" : {
+    "item" : "minecraft:emerald"
+  },"chance3" : {
+    "item" : "spaldingsadditions:dust_silver_fine"
+  }
+}

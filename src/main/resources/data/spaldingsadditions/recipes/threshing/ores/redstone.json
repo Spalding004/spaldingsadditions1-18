@@ -1,0 +1,16 @@
+{
+  "type" : "spaldingsadditions:thresher",
+  "ingredients" : [ {
+    "tag" : "forge:ores/redstone"
+  } ],
+  "output" : {
+    "item" : "minecraft:redstone"
+  },
+  "count" : 4,
+  "ticks" : 80,
+  "chance2" : {
+    "item" : "minecraft:redstone"
+  },"chance3" : {
+    "item" : "spaldingsadditions:dust_silver_fine"
+  }
+}

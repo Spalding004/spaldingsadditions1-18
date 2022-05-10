@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "spaldingsadditions:dust_silver"
+  },
+  "result": {
+  "item": "spaldingsadditions:ingot_silver",
+  "count": 1
+  },
+  "experience": 0.7,
+  "cookingtime": 100
+}

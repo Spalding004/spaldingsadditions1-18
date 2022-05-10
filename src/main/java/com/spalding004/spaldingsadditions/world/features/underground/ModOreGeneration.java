@@ -205,12 +205,12 @@ public class ModOreGeneration {
 		final Holder<PlacedFeature> placedIndiriumOre = PlacementUtils.register("indirium_ore",
 				indirium_ore,
 						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.aboveBottom(200)),
-						InSquarePlacement.spread(), CountPlacement.of(25));
+						InSquarePlacement.spread(), CountPlacement.of(50));
 		OVERWORLD_ORES.add(placedIndiriumOre);
 
 		final Holder<PlacedFeature> placedVendarOre = PlacementUtils.register("vendar_ore",
 				vendar_ore, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(20)),
-						InSquarePlacement.spread(), CountPlacement.of(8));
+						InSquarePlacement.spread(), CountPlacement.of(16));
 		OVERWORLD_ORES.add(placedVendarOre);
 		
 		final Holder<PlacedFeature> placedVendarOreDense = PlacementUtils.register("vendar_ore_dense",
@@ -266,12 +266,12 @@ public class ModOreGeneration {
 		
 		final Holder<PlacedFeature> placedGeldar = PlacementUtils.register("geldar_ore",
 				geldar_ore, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()),
-						InSquarePlacement.spread(), CountPlacement.of(48));
+						InSquarePlacement.spread(), CountPlacement.of(64));
 		NETHER_ORES.add(placedGeldar);
 		
 		final Holder<PlacedFeature> placedVironium = PlacementUtils.register("vironium_ore",
 				vironium_ore, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(90)),
-						InSquarePlacement.spread(), CountPlacement.of(24));
+						InSquarePlacement.spread(), CountPlacement.of(48));
 		END_ORES.add(placedVironium);
 
 		final Holder<PlacedFeature> placedPrismarine = PlacementUtils.register("prismarine_ore",

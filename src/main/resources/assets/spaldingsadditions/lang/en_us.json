@@ -18,7 +18,7 @@
 "item.spaldingsadditions.sawblade" : "Diamond-Tipped Indirium Shredder",
 
 "item.spaldingsadditions.saving_book" : "Book O' Protection",
-
+"item.spaldingsadditions.unknown_item" : "Unknown Item",
 "item.spaldingsadditions.raw_cheval" : "Raw Cheval",
 "item.spaldingsadditions.cheval_steak" : "Cheval Steak",
 
@@ -33,6 +33,10 @@
 "item.spaldingsadditions.indirium_nugget" : "Indirium Nugget",
 "item.spaldingsadditions.indirium_ingot" : "Indirium Ingot",
 "item.spaldingsadditions.indirium_chunk" : "Raw Indirium",
+
+"item.spaldingsadditions.ingot_silver" : "Silver Ingot",
+"item.spaldingsadditions.dust_silver" : "Silver Dust",
+"item.spaldingsadditions.dust_silver_fine" : "Fine Silver Dust",
 
 "item.spaldingsadditions.charged_carbon" : "Charged Carbon",
 "item.spaldingsadditions.replicating_crystal" : "Replicating Crystal",

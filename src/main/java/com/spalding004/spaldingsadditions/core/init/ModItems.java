@@ -7,6 +7,7 @@ import com.spalding004.spaldingsadditions.core.objects.items.ModDamageableItem;
 import com.spalding004.spaldingsadditions.core.objects.items.ModDimensionalCard;
 import com.spalding004.spaldingsadditions.core.objects.items.ModFoodItem;
 import com.spalding004.spaldingsadditions.core.objects.items.ModGenericItem;
+import com.spalding004.spaldingsadditions.core.objects.items.ModHiddenItem;
 import com.spalding004.spaldingsadditions.core.objects.items.ModNetherGaze;
 import com.spalding004.spaldingsadditions.core.objects.items.ModNetherPearl;
 import com.spalding004.spaldingsadditions.core.objects.items.ModSavingBook;
@@ -54,9 +55,13 @@ public final class ModItems {
 		
 		public static final RegistryObject<Item> CHARGED_CARBON = ITEMS.register("charged_carbon", () -> new ModGenericItem());
 		public static final RegistryObject<Item> ENERGETIC_CRYSTAL = ITEMS.register("energetic_crystal", () -> new ModGenericItem());
-		public static final RegistryObject<Item> REPLICATING_CRYSTAL = ITEMS.register("replicating_crystal", () -> new ModDamageableItem(120));
+		public static final RegistryObject<Item> REPLICATING_CRYSTAL = ITEMS.register("replicating_crystal", () -> new ModDamageableItem(200));
 
 		public static final RegistryObject<Item> INERT_CRYSTAL = ITEMS.register("inert_crystal", () -> new ModGenericItem());
+		
+		public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("ingot_silver", () -> new ModGenericItem());
+		public static final RegistryObject<Item> SILVER_DUST = ITEMS.register("dust_silver", () -> new ModGenericItem());
+		public static final RegistryObject<Item> FINE_SILVER_DUST = ITEMS.register("dust_silver_fine", () -> new ModGenericItem());
 		
 		public static final RegistryObject<Item> FRACTURED_LAPIS = ITEMS.register("fractured_lapis", () -> new ModGenericItem());
 		public static final RegistryObject<Item> LAPIS_SHARD = ITEMS.register("lapis_shard", () -> new ModGenericItem());
@@ -84,22 +89,22 @@ public final class ModItems {
 		public static final RegistryObject<Item> SAVING_BOOK = ITEMS.register("saving_book", () -> new ModSavingBook());
 		
 		//other items
-		public static final RegistryObject<Item> CARD_BASIC = ITEMS.register("card_basic", () -> new ModDimensionalCard(96));
-		public static final RegistryObject<Item> CARD_NETHER = ITEMS.register("card_nether", () -> new ModDimensionalCard(64));
-		public static final RegistryObject<Item> CARD_END = ITEMS.register("card_end", () -> new ModDimensionalCard(64));
+		public static final RegistryObject<Item> CARD_BASIC = ITEMS.register("card_basic", () -> new ModDimensionalCard(128));
+		public static final RegistryObject<Item> CARD_NETHER = ITEMS.register("card_nether", () -> new ModDimensionalCard(128));
+		public static final RegistryObject<Item> CARD_END = ITEMS.register("card_end", () -> new ModDimensionalCard(128));
 		public static final RegistryObject<Item> CARD_WITHER = ITEMS.register("card_wither", () -> new ModDimensionalCard(1));
 		
 		public static final RegistryObject<Item> POLISHING_STONE = ITEMS.register("polishing_stone", () -> new ModGenericItem());
 		public static final RegistryObject<Item> SAWDUST = ITEMS.register("sawdust", () -> new ModGenericItem());
 		public static final RegistryObject<Item> WOOD_PULP = ITEMS.register("wood_pulp", () -> new ModGenericItem());
 		
-		public static final RegistryObject<Item> SAWBLADE = ITEMS.register("sawblade", () -> new ModDamageableItem(120));
+		public static final RegistryObject<Item> SAWBLADE = ITEMS.register("sawblade", () -> new ModDamageableItem(256));
 		public static final RegistryObject<Item> DIAMOND_SLIVER = ITEMS.register("diamond_sliver", () -> new ModGenericItem());
 		//foods
 		
 		public static final RegistryObject<Item> RAW_CHEVAL = ITEMS.register("raw_cheval", () -> new ModFoodItem(ModFoods.RAW_CHEVAL));
 		public static final RegistryObject<Item> CHEVAL_STEAK = ITEMS.register("cheval_steak", () -> new ModFoodItem(ModFoods.CHEVAL_STEAK));
 		
-		
+		public static final RegistryObject<Item> UNKNOWN_ITEM = ITEMS.register("unknown_item", () -> new ModHiddenItem());
 	
 }
