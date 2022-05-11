@@ -1,15 +1,18 @@
 {
   "type" : "spaldingsadditions:thresher",
   "ingredients" : [ {
-    "tag" : "forge:ores/diamond"
+    "item" : "minecraft:gravel"
   } ],
   "output" : {
-    "item" : "minecraft:diamond"
+    "item" : "minecraft:flint"
   },
   "count" : 1,
   "ticks" : 80,
+  "chance1" : {
+    "item" : "minecraft:flint"
+  },
   "chance2" : {
-    "item" : "spaldingsadditions:diamond_sliver"
+    "item" : "minecraft:flint"
   },"chance3" : {
     "item" : "spaldingsadditions:dust_silver_fine"
   }

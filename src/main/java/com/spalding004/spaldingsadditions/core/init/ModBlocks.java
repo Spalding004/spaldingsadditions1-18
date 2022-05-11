@@ -120,6 +120,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> THRESHER = BLOCKS.register("thresher", () -> new ModThresher());	
 	
 	public static final RegistryObject<Block> VENDAR_CASING = BLOCKS.register("vendar_casing", () -> new ModMachineCasing());
+	public static final RegistryObject<Block> INDIRIUM_CASING = BLOCKS.register("indirium_casing", () -> new ModMachineCasing());
 	
 	public static final RegistryObject<Block> WOVEN_LEATHER = BLOCKS.register("woven_leather", () -> new ModFabricBlock(Blocks.BROWN_WOOL));
 	

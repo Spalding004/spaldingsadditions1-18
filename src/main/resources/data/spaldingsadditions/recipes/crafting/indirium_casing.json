@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "VGV",
+    "G G",
+    "VGV"
+  ],
+  "key": {
+    "V": {
+       "item": "spaldingsadditions:indirium_ingot"
+    
+    },
+    "G": {
+       "tag": "forge:glass"
+    }
+  },
+  "result": {
+    "item": "spaldingsadditions:indirium_casing"
+  }
+}

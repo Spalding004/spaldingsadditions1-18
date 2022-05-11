@@ -1,7 +1,7 @@
 {
   "type" : "spaldingsadditions:thresher",
   "ingredients" : [ {
-    "item" : "minecraft:diamond_ore"
+    "tag" : "forge:ores/diamond"
   } ],
   "output" : {
     "item" : "minecraft:diamond"
@@ -14,6 +14,6 @@
   "chance2" : {
     "item" : "minecraft:cobblestone"
   },"chance3" : {
-    "item" : "spaldingsadditions:diamond_sliver"
+       "item" : "spaldingsadditions:dust_silver_fine"
   }
 }

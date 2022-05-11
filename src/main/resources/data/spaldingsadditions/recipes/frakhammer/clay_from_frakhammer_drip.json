@@ -1,0 +1,16 @@
+{
+  "type": "spaldingsadditions:frakhammer",
+  "ingredients": [
+  {
+      "tag": "spaldingsadditions:item_frakhammer"
+    },
+    {
+      "item": "minecraft:driptstone_block"
+    }
+    
+  ],
+  "output": {
+    "item": "minecraft:clay"
+  },
+    "count": 2
+}

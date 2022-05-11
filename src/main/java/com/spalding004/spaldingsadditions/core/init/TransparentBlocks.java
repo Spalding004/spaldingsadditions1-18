@@ -18,6 +18,7 @@ public class TransparentBlocks {
 		CUTOUT.add(ModBlocks.BEECH_SAPLING);
 		CUTOUT.add(ModBlocks.BEECH_LEAVES);
 		CUTOUT.add(ModBlocks.VENDAR_CASING);
+		CUTOUT.add(ModBlocks.INDIRIUM_CASING);
 		CUTOUT.add(ModBlocks.CRAPE_MYRTLE_CUTTING);
 		
 		
