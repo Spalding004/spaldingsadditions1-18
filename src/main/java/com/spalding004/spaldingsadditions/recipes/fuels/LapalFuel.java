@@ -11,7 +11,7 @@ public class LapalFuel {
 
 	public static double getFuelStr(ItemStack fuel) {
 		Item item = fuel.getItem();
-		double mult = 1.2D;
+		double mult = 2.3D;
 		double str = 0.0D;
 		
 		if (item == (Items.LAPIS_LAZULI)) {
